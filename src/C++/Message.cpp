@@ -33,64 +33,55 @@ namespace FIX
 
 int const headerOrder[] =
 {
-  FIELD::BeginString,
-  FIELD::BodyLength,
-  FIELD::MsgType
+    FIELD::BeginString,
+    FIELD::BodyLength,
+    FIELD::MsgType
 };
 
 SmartPtr<DataDictionary> Message::s_dataDictionary;
 
 Message::Message()
-: m_validStructure( true )
-, m_tag( 0 )
+    : m_validStructure(true)
+    , m_tag( 0 )
 {
   
 }
 
 Message::Message(const message_order &hdrOrder, const message_order &trlOrder, const message_order& order)
-: FieldMap(order), m_header(hdrOrder),
-  m_trailer(trlOrder), m_validStructure( true ) {}
+    : FieldMap(order)
+    , m_header(hdrOrder)
+    , m_trailer(trlOrder)
+    , m_validStructure( true )
+{}
 
-Message::Message( const std::string& string, bool validate )
-EXCEPT ( InvalidMessage )
-: m_validStructure( true )
-, m_tag( 0 )
+Message::Message(const std::string& string, bool validate)
+    : m_validStructure(true)
+    , m_tag( 0 )
 {
-  setString( string, validate );
+    setString( string, validate );
 }
 
-Message::Message( const std::string& string,
-                  const DataDictionary& dataDictionary,
-                  bool validate )
-EXCEPT ( InvalidMessage )
-: m_validStructure( true )
-, m_tag( 0 )
+Message::Message(const std::string& string, const DataDictionary& dataDictionary, bool validate)
+    : m_validStructure(true)
+    , m_tag(0)
 {
-  setString( string, validate, &dataDictionary, &dataDictionary );
+    setString( string, validate, &dataDictionary, &dataDictionary );
 }
 
-Message::Message( const std::string& string,
-                  const DataDictionary& sessionDataDictionary,
-                  const DataDictionary& applicationDataDictionary,
-                  bool validate )
-EXCEPT ( InvalidMessage )
-: m_validStructure( true )
-, m_tag( 0 )
+Message::Message(const std::string& string, const DataDictionary& sessionDataDictionary, const DataDictionary& applicationDataDictionary, bool validate)
+    : m_validStructure(true)
+    , m_tag(0)
 {
-    setString( string, validate, &sessionDataDictionary, &applicationDataDictionary );
+    setString(string, validate, &sessionDataDictionary, &applicationDataDictionary);
 }
 
-Message::Message( const message_order &hdrOrder,
-                  const message_order &trlOrder,
-                  const message_order& order,
-                  const std::string& string,
-                  const DataDictionary& dataDictionary,
-                  bool validate )
-EXCEPT ( InvalidMessage )
-: FieldMap(order), m_header(hdrOrder),
-  m_trailer(trlOrder), m_validStructure( true )
+Message::Message(const message_order &hdrOrder, const message_order &trlOrder, const message_order& order, const std::string& string, const DataDictionary& dataDictionary, bool validate )
+    : FieldMap(order)
+    , m_header(hdrOrder)
+    , m_trailer(trlOrder)
+    , m_validStructure(true)
 {
-  setString( string, validate, &dataDictionary, &dataDictionary );
+    setString(string, validate, &dataDictionary, &dataDictionary);
 }
 
 Message::Message( const message_order &hdrOrder,
@@ -100,113 +91,112 @@ Message::Message( const message_order &hdrOrder,
                   const DataDictionary& sessionDataDictionary,
                   const DataDictionary& applicationDataDictionary,
                   bool validate )
-EXCEPT ( InvalidMessage )
-: FieldMap(order), m_header(hdrOrder),
-  m_trailer(trlOrder), m_validStructure( true )
+    : FieldMap(order)
+    , m_header(hdrOrder)
+    , m_trailer(trlOrder)
+    , m_validStructure(true)
 {
-  setStringHeader( string );
-  if( isAdmin() )
-    setString( string, validate, &sessionDataDictionary, &sessionDataDictionary );
-  else
-    setString( string, validate, &sessionDataDictionary, &applicationDataDictionary );
+    setStringHeader(string);
+    if(isAdmin()) {
+        setString(string, validate, &sessionDataDictionary, &sessionDataDictionary);
+    }
+    else {
+        setString(string, validate, &sessionDataDictionary, &applicationDataDictionary);
+    }
 }
 
-Message::Message( const BeginString& beginString, const MsgType& msgType )
-: m_validStructure(true)
-, m_tag( 0 )
+Message::Message(const BeginString& beginString, const MsgType& msgType)
+    : m_validStructure(true)
+    , m_tag(0)
 {
-  m_header.setField(beginString);
-  m_header.setField(msgType);
+    m_header.setField(beginString);
+    m_header.setField(msgType);
 }
 
 Message::Message(const Message& copy)
-: FieldMap(copy)
-, m_header(copy.m_header)
-, m_trailer(copy.m_trailer)
-, m_validStructure(copy.m_validStructure)
-, m_tag(copy.m_tag)
+    : FieldMap(copy)
+    , m_header(copy.m_header)
+    , m_trailer(copy.m_trailer)
+    , m_validStructure(copy.m_validStructure)
+    , m_tag(copy.m_tag)
 #ifdef HAVE_EMX
 , m_subMsgType(copy.m_subMsgType)
 #endif
-{
-
-}
+{}
 
 Message::~Message()
-{
-}
+{}
 
-bool Message::InitializeXML( const std::string& url )
+bool Message::InitializeXML(const std::string& url)
 {
-  try
-  {
-    s_dataDictionary.reset(new DataDictionary(url));
-    return true;
-  }
-  catch( ConfigError& )
-  { return false; }
+    try {
+        s_dataDictionary.reset(new DataDictionary(url));
+        return true;
+    }
+    catch(ConfigError&) {
+        return false;
+    }
 }
 
 void Message::reverseRoute( const Header& header )
 {
-  // required routing tags
-  BeginString beginString;
-  SenderCompID senderCompID;
-  TargetCompID targetCompID;
+    // required routing tags
+    BeginString beginString;
+    SenderCompID senderCompID;
+    TargetCompID targetCompID;
 
-  m_header.removeField( beginString.getTag() );
-  m_header.removeField( senderCompID.getTag() );
-  m_header.removeField( targetCompID.getTag() );
+    m_header.removeField(beginString.getTag());
+    m_header.removeField(senderCompID.getTag());
+    m_header.removeField(targetCompID.getTag());
 
-  if( header.getFieldIfSet( beginString ) )
-  {
-    if( beginString.getValue().size() )
-      m_header.setField( beginString );
+    if(header.getFieldIfSet(beginString)) {
+        if(beginString.getValue().size()) {
+            m_header.setField(beginString);
+        }
 
-    OnBehalfOfLocationID onBehalfOfLocationID;
-    DeliverToLocationID deliverToLocationID;
+        OnBehalfOfLocationID onBehalfOfLocationID;
+        DeliverToLocationID deliverToLocationID;
 
-    m_header.removeField( onBehalfOfLocationID.getTag() );
-    m_header.removeField( deliverToLocationID.getTag() );
+        m_header.removeField(onBehalfOfLocationID.getTag());
+        m_header.removeField(deliverToLocationID.getTag());
 
-    if( beginString >= BeginString_FIX41 )
-    {
-      if( header.getFieldIfSet( onBehalfOfLocationID ) )
-      {
-        if( onBehalfOfLocationID.getValue().size() )
-          m_header.setField( DeliverToLocationID( onBehalfOfLocationID ) );
-      }
+        if(beginString >= BeginString_FIX41) {
+            if(header.getFieldIfSet(onBehalfOfLocationID)) {
+                if(onBehalfOfLocationID.getValue().size()) {
+                    m_header.setField(DeliverToLocationID(onBehalfOfLocationID));
+                }
+            }
 
-      if( header.getFieldIfSet( deliverToLocationID ) )
-      {
-        if( deliverToLocationID.getValue().size() )
-          m_header.setField( OnBehalfOfLocationID( deliverToLocationID ) );
-      }
+            if(header.getFieldIfSet(deliverToLocationID)) {
+                if(deliverToLocationID.getValue().size()) {
+                    m_header.setField(OnBehalfOfLocationID(deliverToLocationID));
+                }
+            }
+        }
     }
-  }
 
-  if( header.getFieldIfSet( senderCompID ) )
-  {
-    if( senderCompID.getValue().size() )
-      m_header.setField( TargetCompID( senderCompID ) );
-  }
+    if(header.getFieldIfSet(senderCompID)) {
+        if(senderCompID.getValue().size()) {
+            m_header.setField(TargetCompID(senderCompID));
+        }
+    }
 
-  if( header.getFieldIfSet( targetCompID ) )
-  {
-    if( targetCompID.getValue().size() )
-      m_header.setField( SenderCompID( targetCompID ) );
-  }
+    if(header.getFieldIfSet(targetCompID)) {
+        if(targetCompID.getValue().size()) {
+            m_header.setField(SenderCompID(targetCompID));
+        }
+    }
 
-  // optional routing tags
-  OnBehalfOfCompID onBehalfOfCompID;
-  OnBehalfOfSubID onBehalfOfSubID;
-  DeliverToCompID deliverToCompID;
-  DeliverToSubID deliverToSubID;
+    // optional routing tags
+    OnBehalfOfCompID onBehalfOfCompID;
+    OnBehalfOfSubID onBehalfOfSubID;
+    DeliverToCompID deliverToCompID;
+    DeliverToSubID deliverToSubID;
 
-  m_header.removeField( onBehalfOfCompID.getTag() );
-  m_header.removeField( onBehalfOfSubID.getTag() );
-  m_header.removeField( deliverToCompID.getTag() );
-  m_header.removeField( deliverToSubID.getTag() );
+    m_header.removeField( onBehalfOfCompID.getTag() );
+    m_header.removeField( onBehalfOfSubID.getTag() );
+    m_header.removeField( deliverToCompID.getTag() );
+    m_header.removeField( deliverToSubID.getTag() );
 
   if( header.getFieldIfSet( onBehalfOfCompID ) )
   {
@@ -337,7 +327,6 @@ void Message::setString( const std::string& string,
                          bool doValidation,
                          const DataDictionary* pSessionDataDictionary,
                          const DataDictionary* pApplicationDataDictionary )
-EXCEPT ( InvalidMessage )
 {
   clear();
 
@@ -574,7 +563,6 @@ bool Message::isTrailerField( int field, const DataDictionary * pD )
 }
 
 SessionID Message::getSessionID( const std::string& qualifier ) const
-EXCEPT ( FieldNotFound )
 {
   BeginString beginString;
   SenderCompID senderCompID;

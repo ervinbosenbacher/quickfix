@@ -33,14 +33,14 @@ namespace FIX
 {
 SocketAcceptor::SocketAcceptor( Application& application,
                                 MessageStoreFactory& factory,
-                                const SessionSettings& settings ) EXCEPT ( ConfigError )
+                                const SessionSettings& settings )
 : Acceptor( application, factory, settings ),
   m_pServer( 0 ) {}
 
 SocketAcceptor::SocketAcceptor( Application& application,
                                 MessageStoreFactory& factory,
                                 const SessionSettings& settings,
-                                LogFactory& logFactory ) EXCEPT ( ConfigError )
+                                LogFactory& logFactory )
 : Acceptor( application, factory, settings, logFactory ),
   m_pServer( 0 ) 
 {
@@ -54,7 +54,6 @@ SocketAcceptor::~SocketAcceptor()
 }
 
 void SocketAcceptor::onConfigure( const SessionSettings& s )
-EXCEPT ( ConfigError )
 {
   std::set<SessionID> sessions = s.getSessions();
   std::set<SessionID>::iterator i;
@@ -70,7 +69,6 @@ EXCEPT ( ConfigError )
 }
 
 void SocketAcceptor::onInitialize( const SessionSettings& s )
-EXCEPT ( RuntimeError )
 {
   short port = 0;
 
@@ -166,7 +164,7 @@ void SocketAcceptor::onStop()
 void SocketAcceptor::onConnect( SocketServer& server, int a, int s )
 {
   if ( !socket_isValid( s ) ) return;
-  SocketConnections::iterator i = m_connections.find( s );
+  auto i = m_connections.find( s );
   if ( i != m_connections.end() ) return;
   int port = server.socketToPort( a );
   Sessions sessions = m_portToSessions[port];
@@ -181,7 +179,7 @@ void SocketAcceptor::onConnect( SocketServer& server, int a, int s )
 
 void SocketAcceptor::onWrite( SocketServer& server, int s )
 {
-  SocketConnections::iterator i = m_connections.find( s );
+  auto i = m_connections.find( s );
   if ( i == m_connections.end() ) return ;
   SocketConnection* pSocketConnection = i->second;
   if( pSocketConnection->processQueue() )
@@ -190,7 +188,7 @@ void SocketAcceptor::onWrite( SocketServer& server, int s )
 
 bool SocketAcceptor::onData( SocketServer& server, int s )
 {
-  SocketConnections::iterator i = m_connections.find( s );
+  auto i = m_connections.find( s );
   if ( i == m_connections.end() ) return false;
   SocketConnection* pSocketConnection = i->second;
   return pSocketConnection->read( *this, server );
@@ -198,7 +196,7 @@ bool SocketAcceptor::onData( SocketServer& server, int s )
 
 void SocketAcceptor::onDisconnect( SocketServer&, int s )
 {
-  SocketConnections::iterator i = m_connections.find( s );
+  auto i = m_connections.find( s );
   if ( i == m_connections.end() ) return ;
   SocketConnection* pSocketConnection = i->second;
 

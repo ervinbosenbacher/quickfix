@@ -32,7 +32,6 @@ namespace FIX
 SocketInitiator::SocketInitiator( Application& application,
                                   MessageStoreFactory& factory,
                                   const SessionSettings& settings )
-EXCEPT ( ConfigError )
 : Initiator( application, factory, settings ),
   m_connector( 1 ), m_lastConnect( 0 ),
   m_reconnectInterval( 30 ), m_noDelay( false ), m_sendBufSize( 0 ),
@@ -44,7 +43,6 @@ SocketInitiator::SocketInitiator( Application& application,
                                   MessageStoreFactory& factory,
                                   const SessionSettings& settings,
                                   LogFactory& logFactory )
-EXCEPT ( ConfigError )
 : Initiator( application, factory, settings, logFactory ),
   m_connector( 1 ), m_lastConnect( 0 ),
   m_reconnectInterval( 30 ), m_noDelay( false ), m_sendBufSize( 0 ),
@@ -65,7 +63,6 @@ SocketInitiator::~SocketInitiator()
 }
 
 void SocketInitiator::onConfigure( const SessionSettings& s )
-EXCEPT ( ConfigError )
 {
   const Dictionary& dict = s.get();
 
@@ -80,7 +77,6 @@ EXCEPT ( ConfigError )
 }
 
 void SocketInitiator::onInitialize( const SessionSettings& s )
-EXCEPT ( RuntimeError )
 {
 }
 
@@ -156,7 +152,7 @@ void SocketInitiator::doConnect( const SessionID& s, const Dictionary& d )
 
 void SocketInitiator::onConnect( SocketConnector&, int s )
 {
-  SocketConnections::iterator i = m_pendingConnections.find( s );
+  auto i = m_pendingConnections.find( s );
   if( i == m_pendingConnections.end() ) return;
   SocketConnection* pSocketConnection = i->second;
   
@@ -168,7 +164,7 @@ void SocketInitiator::onConnect( SocketConnector&, int s )
 
 void SocketInitiator::onWrite( SocketConnector& connector, int s )
 {
-  SocketConnections::iterator i = m_connections.find( s );
+  auto i = m_connections.find( s );
   if ( i == m_connections.end() ) return ;
   SocketConnection* pSocketConnection = i->second;
   if( pSocketConnection->processQueue() )
@@ -177,7 +173,7 @@ void SocketInitiator::onWrite( SocketConnector& connector, int s )
 
 bool SocketInitiator::onData( SocketConnector& connector, int s )
 {
-  SocketConnections::iterator i = m_connections.find( s );
+  auto i = m_connections.find( s );
   if ( i == m_connections.end() ) return false;
   SocketConnection* pSocketConnection = i->second;
   return pSocketConnection->read( connector );
@@ -185,8 +181,8 @@ bool SocketInitiator::onData( SocketConnector& connector, int s )
 
 void SocketInitiator::onDisconnect( SocketConnector&, int s )
 {
-  SocketConnections::iterator i = m_connections.find( s );
-  SocketConnections::iterator j = m_pendingConnections.find( s );
+  auto i = m_connections.find( s );
+  auto j = m_pendingConnections.find( s );
 
   SocketConnection* pSocketConnection = 0;
   if( i != m_connections.end() ) 
@@ -236,7 +232,7 @@ void SocketInitiator::getHost( const SessionID& s, const Dictionary& d,
                                std::string& sourceAddress, short& sourcePort)
 {
   int num = 0;
-  SessionToHostNum::iterator i = m_sessionToHostNum.find( s );
+  auto i = m_sessionToHostNum.find( s );
   if ( i != m_sessionToHostNum.end() ) num = i->second;
 
   std::stringstream hostStream;

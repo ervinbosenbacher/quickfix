@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
 
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 option(HAVE_EMX "Build with EMX")
 
 if(HAVE_EMX)

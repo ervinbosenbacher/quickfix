@@ -96,7 +96,6 @@ SocketServer::SocketServer( int timeout )
 
 int SocketServer::add( int port, bool reuse, bool noDelay, 
                        int sendBufSize, int rcvBufSize )
-  EXCEPT ( SocketException& )
 {
   if( m_portToInfo.find(port) != m_portToInfo.end() )
     return m_portToInfo[port].m_socket;
@@ -136,7 +135,7 @@ int SocketServer::accept( int socket )
 
 void SocketServer::close()
 {
-  SocketToInfo::iterator i = m_socketToInfo.begin();
+  auto i = m_socketToInfo.begin();
   for( ; i != m_socketToInfo.end(); ++i )
   {
     int s = i->first;
@@ -148,7 +147,7 @@ void SocketServer::close()
 bool SocketServer::block( Strategy& strategy, bool poll, double timeout )
 {
   std::set<int> sockets;
-  SocketToInfo::iterator i = m_socketToInfo.begin();
+  auto i = m_socketToInfo.begin();
   for( ; i != m_socketToInfo.end(); ++i )
   {
     if( !socket_isValid(i->first) )

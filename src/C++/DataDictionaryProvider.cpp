@@ -34,8 +34,7 @@ DataDictionaryProvider::DataDictionaryProvider( const DataDictionaryProvider& co
   *this = copy;
 }
 
-const DataDictionary& DataDictionaryProvider::getSessionDataDictionary
-(const BeginString& beginString) const EXCEPT ( DataDictionaryNotFound )
+const DataDictionary& DataDictionaryProvider::getSessionDataDictionary(const BeginString& beginString) const
 {
   std::map<std::string, ptr::shared_ptr<DataDictionary> >::const_iterator find =
     m_transportDictionaries.find(beginString);
@@ -45,8 +44,7 @@ const DataDictionary& DataDictionaryProvider::getSessionDataDictionary
   return emptyDataDictionary;
 }
 
-const DataDictionary& DataDictionaryProvider::getApplicationDataDictionary
-(const ApplVerID& applVerID) const EXCEPT ( DataDictionaryNotFound )
+const DataDictionary& DataDictionaryProvider::getApplicationDataDictionary(const ApplVerID& applVerID) const
 {
   std::map<std::string, ptr::shared_ptr<DataDictionary> >::const_iterator find =
     m_applicationDictionaries.find(applVerID);
@@ -56,14 +54,12 @@ const DataDictionary& DataDictionaryProvider::getApplicationDataDictionary
   return emptyDataDictionary;
 }
 
-void DataDictionaryProvider::addTransportDataDictionary
-(const BeginString& beginString, ptr::shared_ptr<DataDictionary> pDD)
+void DataDictionaryProvider::addTransportDataDictionary(const BeginString& beginString, ptr::shared_ptr<DataDictionary> pDD)
 {
   m_transportDictionaries[beginString.getValue()] = pDD;
 }
 
-void DataDictionaryProvider::addApplicationDataDictionary
-(const ApplVerID& applVerID, ptr::shared_ptr<DataDictionary> pDD)
+void DataDictionaryProvider::addApplicationDataDictionary(const ApplVerID& applVerID, ptr::shared_ptr<DataDictionary> pDD)
 {
   m_applicationDictionaries[applVerID.getValue()] = pDD;
 }

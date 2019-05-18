@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="quickfix"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\src\;CMake Files\src\C++\;CMake Files\examples\;CMake Files\examples\executor\;CMake Files\examples\executor\C++\;CMake Files\examples\tradeclient\;CMake Files\examples\ordermatch\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="QUICKFIX_HEADERS_LINK">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 QUICKFIX_HEADERS_LINK"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="quickfix">
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/libquickfix.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
+					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 quickfix"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="quickfix/fast">
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/libquickfix.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
+					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 quickfix/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="executor_target">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 executor_target"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="executor">
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/executor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
+					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 executor"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="executor/fast">
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/executor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
+					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 executor/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tradeclient_target">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 tradeclient_target"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tradeclient">
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/tradeclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
+					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 tradeclient"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tradeclient/fast">
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/tradeclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
+					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 tradeclient/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ordermatch_target">
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 ordermatch_target"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ordermatch">
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/ordermatch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
+					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 ordermatch"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ordermatch/fast">
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/ordermatch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
+					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_fork"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 ordermatch/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/executor/C++/Application.cpp">
+			<Option target="executor"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/executor/C++/Application.h">
+			<Option target="executor"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/executor/C++/executor.cpp">
+			<Option target="executor"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/ordermatch/Application.cpp">
+			<Option target="ordermatch"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/ordermatch/Application.h">
+			<Option target="ordermatch"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/ordermatch/Market.cpp">
+			<Option target="ordermatch"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/ordermatch/Market.h">
+			<Option target="ordermatch"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/ordermatch/ordermatch.cpp">
+			<Option target="ordermatch"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient/Application.cpp">
+			<Option target="tradeclient"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient/Application.h">
+			<Option target="tradeclient"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient/tradeclient.cpp">
+			<Option target="tradeclient"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Acceptor.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Acceptor.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/DataDictionary.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/DataDictionary.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/DataDictionaryProvider.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/DataDictionaryProvider.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Dictionary.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Dictionary.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/FieldConvertors.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/FieldConvertors.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/FieldMap.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/FieldMap.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/FieldTypes.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/FieldTypes.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/FileLog.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/FileLog.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/FileStore.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/FileStore.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Group.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Group.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/HttpConnection.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/HttpConnection.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/HttpMessage.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/HttpMessage.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/HttpParser.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/HttpParser.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/HttpServer.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/HttpServer.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Initiator.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Initiator.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Log.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Log.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Message.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Message.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/MessageSorters.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/MessageSorters.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/MessageStore.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/MessageStore.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/MySQLLog.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/MySQLLog.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/MySQLStore.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/MySQLStore.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/NullStore.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/NullStore.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/OdbcLog.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/OdbcLog.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/OdbcStore.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/OdbcStore.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/PUGIXML_DOMDocument.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/PUGIXML_DOMDocument.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Parser.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Parser.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/PostgreSQLLog.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/PostgreSQLLog.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/PostgreSQLStore.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/PostgreSQLStore.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Session.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Session.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SessionFactory.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SessionFactory.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SessionSettings.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SessionSettings.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Settings.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Settings.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketAcceptor.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketAcceptor.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketConnection.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketConnection.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketConnector.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketConnector.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketInitiator.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketInitiator.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketMonitor.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketMonitor.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketServer.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/SocketServer.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/ThreadedSocketAcceptor.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/ThreadedSocketAcceptor.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/ThreadedSocketConnection.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/ThreadedSocketConnection.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/ThreadedSocketInitiator.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/ThreadedSocketInitiator.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/TimeRange.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/TimeRange.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Utility.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/Utility.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/pugixml.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/pugixml.hpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/stdafx.cpp">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/stdafx.h">
+			<Option target="quickfix"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake/FindSharedPtr.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake/FindUniquePtr.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake/QuickfixPlatformSettings.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake/QuickfixPrebuildSetup.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\C++\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/executor/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\executor\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/executor/C++/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\executor\C++\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\tradeclient\"/>
+		</Unit>
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/ordermatch/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\ordermatch\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

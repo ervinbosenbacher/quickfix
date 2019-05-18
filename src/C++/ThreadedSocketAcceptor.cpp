@@ -32,7 +32,7 @@ namespace FIX
 ThreadedSocketAcceptor::ThreadedSocketAcceptor(
   Application& application,
   MessageStoreFactory& factory,
-  const SessionSettings& settings ) EXCEPT ( ConfigError )
+  const SessionSettings& settings )
 : Acceptor( application, factory, settings )
 { socket_init(); }
 
@@ -40,7 +40,7 @@ ThreadedSocketAcceptor::ThreadedSocketAcceptor(
   Application& application,
   MessageStoreFactory& factory,
   const SessionSettings& settings,
-  LogFactory& logFactory ) EXCEPT ( ConfigError )
+  LogFactory& logFactory )
 : Acceptor( application, factory, settings, logFactory )
 { 
   socket_init(); 
@@ -52,7 +52,6 @@ ThreadedSocketAcceptor::~ThreadedSocketAcceptor()
 }
 
 void ThreadedSocketAcceptor::onConfigure( const SessionSettings& s )
-EXCEPT ( ConfigError )
 {
   std::set<SessionID> sessions = s.getSessions();
   std::set<SessionID>::iterator i;
@@ -68,7 +67,6 @@ EXCEPT ( ConfigError )
 }
 
 void ThreadedSocketAcceptor::onInitialize( const SessionSettings& s )
-EXCEPT ( RuntimeError )
 {
   short port = 0;
   std::set<int> ports;
@@ -215,7 +213,7 @@ THREAD_PROC ThreadedSocketAcceptor::socketAcceptorThread( void* p )
       new ThreadedSocketConnection
         ( socket, sessions, pAcceptor->getLog() );
 
-    ConnectionThreadInfo* info = new ConnectionThreadInfo( pAcceptor, pConnection );
+    auto info = new ConnectionThreadInfo( pAcceptor, pConnection );
 
     {
       Locker l( pAcceptor->m_mutex );
@@ -245,7 +243,7 @@ THREAD_PROC ThreadedSocketAcceptor::socketAcceptorThread( void* p )
 
 THREAD_PROC ThreadedSocketAcceptor::socketConnectionThread( void* p )
 {
-  ConnectionThreadInfo * info = reinterpret_cast < ConnectionThreadInfo* > ( p );
+  auto info = reinterpret_cast < ConnectionThreadInfo* > ( p );
 
   ThreadedSocketAcceptor* pAcceptor = info->m_pAcceptor;
   ThreadedSocketConnection* pConnection = info->m_pConnection;

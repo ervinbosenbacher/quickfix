@@ -30,15 +30,13 @@
 
 namespace FIX
 {
-SessionSettings::SessionSettings( std::istream& stream, bool resolveEnvVars )
-EXCEPT ( ConfigError )
+SessionSettings::SessionSettings(std::istream& stream, bool resolveEnvVars)
 : m_resolveEnvVars( resolveEnvVars )
 {
   stream >> *this;
 }
 
 SessionSettings::SessionSettings( const std::string& file, bool resolveEnvVars )
-EXCEPT ( ConfigError )
 : m_resolveEnvVars( resolveEnvVars )
 {
   std::ifstream fstream( file.c_str() );
@@ -48,7 +46,6 @@ EXCEPT ( ConfigError )
 }
 
 std::istream& operator>>( std::istream& stream, SessionSettings& s )
-EXCEPT ( ConfigError )
 {
   Settings settings(s.m_resolveEnvVars);
   stream >> settings;
@@ -125,7 +122,6 @@ const bool SessionSettings::has( const SessionID& sessionID ) const
 }
 
 const Dictionary& SessionSettings::get( const SessionID& sessionID ) const
-EXCEPT ( ConfigError )
 {
   Dictionaries::const_iterator i;
   i = m_settings.find( sessionID );
@@ -133,59 +129,60 @@ EXCEPT ( ConfigError )
   return i->second;
 }
 
-void SessionSettings::set( const SessionID& sessionID,
-                           Dictionary settings )
-EXCEPT ( ConfigError )
-{
-  if( has(sessionID) )
-    throw ConfigError( "Duplicate Session " + sessionID.toString() );
+void SessionSettings::set(const SessionID& sessionID, Dictionary settings) {
+    if( has(sessionID) )
+        throw ConfigError( "Duplicate Session " + sessionID.toString() );
 
-  settings.setString( BEGINSTRING, sessionID.getBeginString() );
-  settings.setString( SENDERCOMPID, sessionID.getSenderCompID() );
-  settings.setString( TARGETCOMPID, sessionID.getTargetCompID() );
+    settings.setString(BEGINSTRING, sessionID.getBeginString());
+    settings.setString(SENDERCOMPID, sessionID.getSenderCompID());
+    settings.setString(TARGETCOMPID, sessionID.getTargetCompID());
 
-  settings.merge( m_defaults );
-  validate( settings );
-  m_settings[ sessionID ] = settings;
+    settings.merge(m_defaults);
+    validate(settings);
+    m_settings[sessionID] = settings;
 }
 
-void SessionSettings::set( const Dictionary& defaults ) EXCEPT ( ConfigError ) 
-{ 
-  m_defaults = defaults;
-  Dictionaries::iterator i = m_settings.begin();
-  for( i = m_settings.begin(); i != m_settings.end(); ++i )
-    i->second.merge( defaults );
+void SessionSettings::set(const Dictionary& defaults) {
+    m_defaults = defaults;
+    /*
+    for(auto i = m_settings.begin(); i != m_settings.end(); ++i) {
+        i->second.merge(defaults);
+    }
+     */
+
+    for (auto setting : m_settings) {
+        setting.second.merge(defaults);
+    }
 }
 
-std::set < SessionID > SessionSettings::getSessions() const
-{
-  std::set < SessionID > result;
-  Dictionaries::const_iterator i;
-  for ( i = m_settings.begin(); i != m_settings.end(); ++i )
-    result.insert( i->first );
-  return result;
+std::set < SessionID > SessionSettings::getSessions() const {
+    std::set <SessionID> result;
+    /*
+    for (auto i = m_settings.begin(); i != m_settings.end(); ++i )
+        result.insert( i->first );
+        */
+    for (const auto& setting : m_settings) {
+        result.insert(setting.first);
+    }
+    return result;
 }
 
-void SessionSettings::validate( const Dictionary& dictionary ) const
-EXCEPT ( ConfigError )
-{
-  std::string beginString = dictionary.getString( BEGINSTRING );
-  if( beginString != BeginString_FIX40 &&
-      beginString != BeginString_FIX41 &&
-      beginString != BeginString_FIX42 &&
-      beginString != BeginString_FIX43 &&
-      beginString != BeginString_FIX44 &&
-      beginString != BeginString_FIXT11 )
-  {
-    throw ConfigError( std::string(BEGINSTRING) + " must be FIX.4.0 to FIX.4.4 or FIXT.1.1" );
-  }
+void SessionSettings::validate( const Dictionary& dictionary ) const  {
+    std::string beginString = dictionary.getString(BEGINSTRING);
 
-  std::string connectionType = dictionary.getString( CONNECTION_TYPE );
-  if( connectionType != "initiator" &&
-      connectionType != "acceptor" )
-  {
-    throw ConfigError( std::string(CONNECTION_TYPE) + " must be 'initiator' or 'acceptor'" );
-  }
+    if(beginString != BeginString_FIX40 &&
+       beginString != BeginString_FIX41 &&
+       beginString != BeginString_FIX42 &&
+       beginString != BeginString_FIX43 &&
+       beginString != BeginString_FIX44 &&
+       beginString != BeginString_FIXT11) {
+        throw ConfigError(std::string(BEGINSTRING) + " must be FIX.4.0 to FIX.4.4 or FIXT.1.1");
+    }
+
+    std::string connectionType = dictionary.getString( CONNECTION_TYPE );
+    if(connectionType != "initiator" && connectionType != "acceptor") {
+        throw ConfigError( std::string(CONNECTION_TYPE) + " must be 'initiator' or 'acceptor'" );
+    }
 }
 
 }
