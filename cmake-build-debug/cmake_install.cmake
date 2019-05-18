@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_fork
+# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_eb
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,13 +33,13 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quickfix" TYPE DIRECTORY FILES "/Users/ervinbosenbacher/workspace/research/quickfix_fork/spec/" FILES_MATCHING REGEX "/fix[^/]*\\.xml$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quickfix" TYPE DIRECTORY FILES "/Users/ervinbosenbacher/workspace/research/quickfix_eb/spec/" FILES_MATCHING REGEX "/fix[^/]*\\.xml$")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/cmake_install.cmake")
-  include("/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/cmake_install.cmake")
+  include("/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/cmake_install.cmake")
+  include("/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient/Application.cpp" "/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.o"
-  "/Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient/tradeclient.cpp" "/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o"
+  "/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/Application.cpp" "/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.o"
+  "/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/tradeclient.cpp" "/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -24,7 +24,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/CMakeFiles/quickfix.dir/DependInfo.cmake"
+  "/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/CMakeFiles/quickfix.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++
+# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/libquickfix.16.0.1.dylib"
-    "/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/libquickfix.16.dylib"
+    "/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/libquickfix.16.0.1.dylib"
+    "/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/libquickfix.16.dylib"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libquickfix.16.0.1.dylib"
@@ -51,7 +51,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/libquickfix.dylib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/libquickfix.dylib")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libquickfix.dylib" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libquickfix.dylib")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -61,6 +61,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quickfix" TYPE DIRECTORY FILES "/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/double\\-conversion$" EXCLUDE REGEX "/test$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quickfix" TYPE DIRECTORY FILES "/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/double\\-conversion$" EXCLUDE REGEX "/test$" EXCLUDE)
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient
+# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

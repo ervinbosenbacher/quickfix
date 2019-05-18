@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_fork/examples
+# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_eb/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/executor/cmake_install.cmake")
-  include("/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/tradeclient/cmake_install.cmake")
-  include("/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/examples/ordermatch/cmake_install.cmake")
+  include("/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/cmake_install.cmake")
+  include("/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/cmake_install.cmake")
+  include("/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/cmake_install.cmake")
 
 endif()
 

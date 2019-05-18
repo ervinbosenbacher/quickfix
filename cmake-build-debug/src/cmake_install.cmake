@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_fork/src
+# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_eb/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/ervinbosenbacher/workspace/research/quickfix_fork/cmake-build-debug/src/C++/cmake_install.cmake")
+  include("/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/cmake_install.cmake")
 
 endif()
 
