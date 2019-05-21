@@ -59,10 +59,10 @@ RM = /usr/local/Cellar/cmake/3.14.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork
+CMAKE_SOURCE_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_barclays
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork/build
+CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/QUICKFIX_HEADERS_LINK.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork/buil
 CMakeFiles/QUICKFIX_HEADERS_LINK.dir/all:
 	$(MAKE) -f CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make CMakeFiles/QUICKFIX_HEADERS_LINK.dir/depend
 	$(MAKE) -f CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles --progress-num= "Built target QUICKFIX_HEADERS_LINK"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles --progress-num= "Built target QUICKFIX_HEADERS_LINK"
 .PHONY : CMakeFiles/QUICKFIX_HEADERS_LINK.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/QUICKFIX_HEADERS_LINK.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/QUICKFIX_HEADERS_LINK.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/QUICKFIX_HEADERS_LINK.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
 .PHONY : CMakeFiles/QUICKFIX_HEADERS_LINK.dir/rule
 
 # Convenience name for target.
@@ -106,16 +106,22 @@ clean: CMakeFiles/QUICKFIX_HEADERS_LINK.dir/clean
 
 # Convenience name for "all" pass in the directory.
 src/all: src/C++/all
+src/all: src/python/all
+src/all: src/python_pybind11/all
 
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
 src/clean: src/C++/clean
+src/clean: src/python/clean
+src/clean: src/python_pybind11/clean
 
 .PHONY : src/clean
 
 # Convenience name for "preinstall" pass in the directory.
 src/preinstall: src/C++/preinstall
+src/preinstall: src/python/preinstall
+src/preinstall: src/python_pybind11/preinstall
 
 .PHONY : src/preinstall
 
@@ -144,7 +150,7 @@ src/C++/preinstall:
 src/C++/CMakeFiles/quickfix.dir/all:
 	$(MAKE) -f src/C++/CMakeFiles/quickfix.dir/build.make src/C++/CMakeFiles/quickfix.dir/depend
 	$(MAKE) -f src/C++/CMakeFiles/quickfix.dir/build.make src/C++/CMakeFiles/quickfix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53 "Built target quickfix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57 "Built target quickfix"
 .PHONY : src/C++/CMakeFiles/quickfix.dir/all
 
 # Include target in all.
@@ -154,9 +160,9 @@ all: src/C++/CMakeFiles/quickfix.dir/all
 
 # Build rule for subdir invocation for target.
 src/C++/CMakeFiles/quickfix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 46
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 46
 	$(MAKE) -f CMakeFiles/Makefile2 src/C++/CMakeFiles/quickfix.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
 .PHONY : src/C++/CMakeFiles/quickfix.dir/rule
 
 # Convenience name for target.
@@ -173,6 +179,136 @@ src/C++/CMakeFiles/quickfix.dir/clean:
 clean: src/C++/CMakeFiles/quickfix.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/python
+
+# Convenience name for "all" pass in the directory.
+src/python/all: src/python/CMakeFiles/_quickfix.dir/all
+
+.PHONY : src/python/all
+
+# Convenience name for "clean" pass in the directory.
+src/python/clean: src/python/CMakeFiles/_quickfix.dir/clean
+
+.PHONY : src/python/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/python/preinstall:
+
+.PHONY : src/python/preinstall
+
+#=============================================================================
+# Target rules for target src/python/CMakeFiles/_quickfix.dir
+
+# All Build rule for target.
+src/python/CMakeFiles/_quickfix.dir/all: src/C++/CMakeFiles/quickfix.dir/all
+	$(MAKE) -f src/python/CMakeFiles/_quickfix.dir/build.make src/python/CMakeFiles/_quickfix.dir/depend
+	$(MAKE) -f src/python/CMakeFiles/_quickfix.dir/build.make src/python/CMakeFiles/_quickfix.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles --progress-num=1,2 "Built target _quickfix"
+.PHONY : src/python/CMakeFiles/_quickfix.dir/all
+
+# Include target in all.
+all: src/python/CMakeFiles/_quickfix.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/python/CMakeFiles/_quickfix.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 48
+	$(MAKE) -f CMakeFiles/Makefile2 src/python/CMakeFiles/_quickfix.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
+.PHONY : src/python/CMakeFiles/_quickfix.dir/rule
+
+# Convenience name for target.
+_quickfix: src/python/CMakeFiles/_quickfix.dir/rule
+
+.PHONY : _quickfix
+
+# clean rule for target.
+src/python/CMakeFiles/_quickfix.dir/clean:
+	$(MAKE) -f src/python/CMakeFiles/_quickfix.dir/build.make src/python/CMakeFiles/_quickfix.dir/clean
+.PHONY : src/python/CMakeFiles/_quickfix.dir/clean
+
+# clean rule for target.
+clean: src/python/CMakeFiles/_quickfix.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/python_pybind11
+
+# Convenience name for "all" pass in the directory.
+src/python_pybind11/all: src/python_pybind11/CMakeFiles/pyfix.dir/all
+src/python_pybind11/all: src/python_pybind11/pybind11/all
+
+.PHONY : src/python_pybind11/all
+
+# Convenience name for "clean" pass in the directory.
+src/python_pybind11/clean: src/python_pybind11/CMakeFiles/pyfix.dir/clean
+src/python_pybind11/clean: src/python_pybind11/pybind11/clean
+
+.PHONY : src/python_pybind11/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/python_pybind11/preinstall: src/python_pybind11/pybind11/preinstall
+
+.PHONY : src/python_pybind11/preinstall
+
+#=============================================================================
+# Target rules for target src/python_pybind11/CMakeFiles/pyfix.dir
+
+# All Build rule for target.
+src/python_pybind11/CMakeFiles/pyfix.dir/all: src/C++/CMakeFiles/quickfix.dir/all
+	$(MAKE) -f src/python_pybind11/CMakeFiles/pyfix.dir/build.make src/python_pybind11/CMakeFiles/pyfix.dir/depend
+	$(MAKE) -f src/python_pybind11/CMakeFiles/pyfix.dir/build.make src/python_pybind11/CMakeFiles/pyfix.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles --progress-num=10,11 "Built target pyfix"
+.PHONY : src/python_pybind11/CMakeFiles/pyfix.dir/all
+
+# Include target in all.
+all: src/python_pybind11/CMakeFiles/pyfix.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/python_pybind11/CMakeFiles/pyfix.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 48
+	$(MAKE) -f CMakeFiles/Makefile2 src/python_pybind11/CMakeFiles/pyfix.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
+.PHONY : src/python_pybind11/CMakeFiles/pyfix.dir/rule
+
+# Convenience name for target.
+pyfix: src/python_pybind11/CMakeFiles/pyfix.dir/rule
+
+.PHONY : pyfix
+
+# clean rule for target.
+src/python_pybind11/CMakeFiles/pyfix.dir/clean:
+	$(MAKE) -f src/python_pybind11/CMakeFiles/pyfix.dir/build.make src/python_pybind11/CMakeFiles/pyfix.dir/clean
+.PHONY : src/python_pybind11/CMakeFiles/pyfix.dir/clean
+
+# clean rule for target.
+clean: src/python_pybind11/CMakeFiles/pyfix.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/python_pybind11/pybind11
+
+# Convenience name for "all" pass in the directory.
+src/python_pybind11/pybind11/all:
+
+.PHONY : src/python_pybind11/pybind11/all
+
+# Convenience name for "clean" pass in the directory.
+src/python_pybind11/pybind11/clean:
+
+.PHONY : src/python_pybind11/pybind11/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/python_pybind11/pybind11/preinstall:
+
+.PHONY : src/python_pybind11/pybind11/preinstall
 
 #=============================================================================
 # Directory level rules for directory examples
@@ -243,7 +379,7 @@ examples/executor/C++/preinstall:
 examples/executor/C++/CMakeFiles/executor_target.dir/all: examples/executor/C++/CMakeFiles/executor.dir/all
 	$(MAKE) -f examples/executor/C++/CMakeFiles/executor_target.dir/build.make examples/executor/C++/CMakeFiles/executor_target.dir/depend
 	$(MAKE) -f examples/executor/C++/CMakeFiles/executor_target.dir/build.make examples/executor/C++/CMakeFiles/executor_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles --progress-num= "Built target executor_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles --progress-num= "Built target executor_target"
 .PHONY : examples/executor/C++/CMakeFiles/executor_target.dir/all
 
 # Include target in all.
@@ -253,9 +389,9 @@ all: examples/executor/C++/CMakeFiles/executor_target.dir/all
 
 # Build rule for subdir invocation for target.
 examples/executor/C++/CMakeFiles/executor_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 49
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 examples/executor/C++/CMakeFiles/executor_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
 .PHONY : examples/executor/C++/CMakeFiles/executor_target.dir/rule
 
 # Convenience name for target.
@@ -280,7 +416,7 @@ clean: examples/executor/C++/CMakeFiles/executor_target.dir/clean
 examples/executor/C++/CMakeFiles/executor.dir/all: src/C++/CMakeFiles/quickfix.dir/all
 	$(MAKE) -f examples/executor/C++/CMakeFiles/executor.dir/build.make examples/executor/C++/CMakeFiles/executor.dir/depend
 	$(MAKE) -f examples/executor/C++/CMakeFiles/executor.dir/build.make examples/executor/C++/CMakeFiles/executor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles --progress-num=1,2,3 "Built target executor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles --progress-num=3,4,5 "Built target executor"
 .PHONY : examples/executor/C++/CMakeFiles/executor.dir/all
 
 # Include target in all.
@@ -290,9 +426,9 @@ all: examples/executor/C++/CMakeFiles/executor.dir/all
 
 # Build rule for subdir invocation for target.
 examples/executor/C++/CMakeFiles/executor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 49
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 examples/executor/C++/CMakeFiles/executor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
 .PHONY : examples/executor/C++/CMakeFiles/executor.dir/rule
 
 # Convenience name for target.
@@ -337,7 +473,7 @@ examples/tradeclient/preinstall:
 examples/tradeclient/CMakeFiles/tradeclient_target.dir/all: examples/tradeclient/CMakeFiles/tradeclient.dir/all
 	$(MAKE) -f examples/tradeclient/CMakeFiles/tradeclient_target.dir/build.make examples/tradeclient/CMakeFiles/tradeclient_target.dir/depend
 	$(MAKE) -f examples/tradeclient/CMakeFiles/tradeclient_target.dir/build.make examples/tradeclient/CMakeFiles/tradeclient_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles --progress-num= "Built target tradeclient_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles --progress-num= "Built target tradeclient_target"
 .PHONY : examples/tradeclient/CMakeFiles/tradeclient_target.dir/all
 
 # Include target in all.
@@ -347,9 +483,9 @@ all: examples/tradeclient/CMakeFiles/tradeclient_target.dir/all
 
 # Build rule for subdir invocation for target.
 examples/tradeclient/CMakeFiles/tradeclient_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 49
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 examples/tradeclient/CMakeFiles/tradeclient_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
 .PHONY : examples/tradeclient/CMakeFiles/tradeclient_target.dir/rule
 
 # Convenience name for target.
@@ -374,7 +510,7 @@ clean: examples/tradeclient/CMakeFiles/tradeclient_target.dir/clean
 examples/tradeclient/CMakeFiles/tradeclient.dir/all: src/C++/CMakeFiles/quickfix.dir/all
 	$(MAKE) -f examples/tradeclient/CMakeFiles/tradeclient.dir/build.make examples/tradeclient/CMakeFiles/tradeclient.dir/depend
 	$(MAKE) -f examples/tradeclient/CMakeFiles/tradeclient.dir/build.make examples/tradeclient/CMakeFiles/tradeclient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles --progress-num=54,55,56 "Built target tradeclient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles --progress-num=58,59,60 "Built target tradeclient"
 .PHONY : examples/tradeclient/CMakeFiles/tradeclient.dir/all
 
 # Include target in all.
@@ -384,9 +520,9 @@ all: examples/tradeclient/CMakeFiles/tradeclient.dir/all
 
 # Build rule for subdir invocation for target.
 examples/tradeclient/CMakeFiles/tradeclient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 49
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 examples/tradeclient/CMakeFiles/tradeclient.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
 .PHONY : examples/tradeclient/CMakeFiles/tradeclient.dir/rule
 
 # Convenience name for target.
@@ -431,7 +567,7 @@ examples/ordermatch/preinstall:
 examples/ordermatch/CMakeFiles/ordermatch_target.dir/all: examples/ordermatch/CMakeFiles/ordermatch.dir/all
 	$(MAKE) -f examples/ordermatch/CMakeFiles/ordermatch_target.dir/build.make examples/ordermatch/CMakeFiles/ordermatch_target.dir/depend
 	$(MAKE) -f examples/ordermatch/CMakeFiles/ordermatch_target.dir/build.make examples/ordermatch/CMakeFiles/ordermatch_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles --progress-num= "Built target ordermatch_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles --progress-num= "Built target ordermatch_target"
 .PHONY : examples/ordermatch/CMakeFiles/ordermatch_target.dir/all
 
 # Include target in all.
@@ -441,9 +577,9 @@ all: examples/ordermatch/CMakeFiles/ordermatch_target.dir/all
 
 # Build rule for subdir invocation for target.
 examples/ordermatch/CMakeFiles/ordermatch_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 examples/ordermatch/CMakeFiles/ordermatch_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
 .PHONY : examples/ordermatch/CMakeFiles/ordermatch_target.dir/rule
 
 # Convenience name for target.
@@ -468,7 +604,7 @@ clean: examples/ordermatch/CMakeFiles/ordermatch_target.dir/clean
 examples/ordermatch/CMakeFiles/ordermatch.dir/all: src/C++/CMakeFiles/quickfix.dir/all
 	$(MAKE) -f examples/ordermatch/CMakeFiles/ordermatch.dir/build.make examples/ordermatch/CMakeFiles/ordermatch.dir/depend
 	$(MAKE) -f examples/ordermatch/CMakeFiles/ordermatch.dir/build.make examples/ordermatch/CMakeFiles/ordermatch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles --progress-num=4,5,6,7 "Built target ordermatch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles --progress-num=6,7,8,9 "Built target ordermatch"
 .PHONY : examples/ordermatch/CMakeFiles/ordermatch.dir/all
 
 # Include target in all.
@@ -478,9 +614,9 @@ all: examples/ordermatch/CMakeFiles/ordermatch.dir/all
 
 # Build rule for subdir invocation for target.
 examples/ordermatch/CMakeFiles/ordermatch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 examples/ordermatch/CMakeFiles/ordermatch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles 0
 .PHONY : examples/ordermatch/CMakeFiles/ordermatch.dir/rule
 
 # Convenience name for target.

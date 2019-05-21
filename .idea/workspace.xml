@@ -19,10 +19,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c82f3ab-db4f-49b6-bef0-1b91bb3406e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/python_pybind11/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/python_pybind11/quickfix.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/python_pybind11/quickfix.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor_target.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor_target.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/executor" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/executor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/executor/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch_target.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch_target.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/ordermatch" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/ordermatch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient_target.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient_target.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/tradeclient" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/tradeclient" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/C++/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
@@ -61,7 +124,19 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/C++/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/C++/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/C++/ThreadedSSLSocketInitiator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/C++/ThreadedSSLSocketInitiator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pybind11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/C++/Exceptions.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/C++/Exceptions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/C++/FieldMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/C++/FieldMap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/C++/Message.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/C++/Message.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/C++/Message.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/C++/Message.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/python/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/python/QuickfixPython.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/QuickfixPython.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/python/QuickfixPython.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/QuickfixPython.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/python/quickfix.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/quickfix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/python/swig.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/swig.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/python3/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/python3/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickfix.i" beforeDir="false" afterPath="$PROJECT_DIR$/src/quickfix.i" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,104 +148,149 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="DockManager">
+    <window id="4">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/include/quickfix/SocketInitiator.h">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="424">
+                    <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/include/quickfix/Initiator.h">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="202">
+                    <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake/QuickfixPrebuildSetup.cmake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/examples/ordermatch/Application.cpp">
+        <entry file="file://$PROJECT_DIR$/src/python_pybind11/quickfix.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
+            <state relative-caret-position="653">
+              <caret line="128" column="36" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/C++/MySQLStore.h">
+        <entry file="file://$PROJECT_DIR$/include/quickfix/MessageStore.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="116" column="59" selection-start-line="116" selection-start-column="59" selection-end-line="116" selection-end-column="59" />
+            <state relative-caret-position="409">
+              <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/C++/FileStore.h">
+        <entry file="file://$PROJECT_DIR$/include/quickfix/SessionSettings.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+            <state relative-caret-position="567">
+              <caret line="224" column="69" selection-start-line="224" selection-start-column="18" selection-end-line="224" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/C++/Dictionary.h">
+        <entry file="file://$PROJECT_DIR$/include/quickfix/FileLog.h">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/quickfix/FileStore.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="857">
-              <caret line="67" column="40" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+            <state relative-caret-position="525">
+              <caret line="38" column="51" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/C++/SessionState.h">
+        <entry file="file://$PROJECT_DIR$/include/quickfix/Log.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="733">
-              <caret line="191" column="16" selection-start-line="191" selection-start-column="16" selection-end-line="191" selection-end-column="16" />
+            <state relative-caret-position="392">
+              <caret line="55" column="42" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/C++/DataDictionary.h">
+        <entry file="file://$PROJECT_DIR$/include/quickfix/Message.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="375" column="47" selection-start-line="375" selection-start-column="47" selection-end-line="375" selection-end-column="47" />
+            <state relative-caret-position="198">
+              <caret line="126" column="78" selection-start-line="126" selection-start-column="78" selection-end-line="126" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/C++/MySQLConnection.h">
+        <entry file="file://$PROJECT_DIR$/include/quickfix/Message.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/C++/HttpParser.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/C++/PostgreSQLConnection.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/C++/SocketServer.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="63" column="52" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
+            <state relative-caret-position="96">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>EXCEPT</find>
+      <find>FIX::Message</find>
+      <find>Message swig_types</find>
+      <find>FIX::Mess</find>
+      <find>message</find>
+      <find>setFiel</find>
+      <find>_new_Message</find>
+      <find>Message</find>
+      <find>PYTHON_INCLUDE_DIRS</find>
+      <find>toXML</find>
+      <find>python</find>
+      <find>addF</find>
+      <find>addField</find>
+      <find>pytho</find>
+      <find>screenlo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,15 +299,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/examples/executor/C++/Application.cpp" />
-        <option value="$PROJECT_DIR$/examples/executor/C++/Application.h" />
-        <option value="$PROJECT_DIR$/examples/ordermatch/Application.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/C++/pugixml.hpp" />
-        <option value="$PROJECT_DIR$/src/C++/pugixml.cpp" />
-        <option value="$PROJECT_DIR$/src/C++/SessionSettings.cpp" />
-        <option value="$PROJECT_DIR$/src/C++/SessionFactory.h" />
-        <option value="$PROJECT_DIR$/src/C++/NullStore.h" />
         <option value="$PROJECT_DIR$/src/C++/MessageStore.h" />
         <option value="$PROJECT_DIR$/src/C++/ThreadedSocketConnection.h" />
         <option value="$PROJECT_DIR$/src/C++/ThreadedSSLSocketInitiator.cpp" />
@@ -205,8 +316,6 @@
         <option value="$PROJECT_DIR$/src/C++/SessionSettings.h" />
         <option value="$PROJECT_DIR$/src/C++/Initiator.h" />
         <option value="$PROJECT_DIR$/src/C++/Session.h" />
-        <option value="$PROJECT_DIR$/src/C++/Message.h" />
-        <option value="$PROJECT_DIR$/src/C++/FieldMap.h" />
         <option value="$PROJECT_DIR$/src/C++/OdbcStore.h" />
         <option value="$PROJECT_DIR$/src/C++/PostgreSQLStore.h" />
         <option value="$PROJECT_DIR$/src/C++/HttpConnection.h" />
@@ -230,14 +339,25 @@
         <option value="$PROJECT_DIR$/src/C++/PostgreSQLConnection.h" />
         <option value="$PROJECT_DIR$/src/C++/SocketServer.h" />
         <option value="$PROJECT_DIR$/src/C++/DataDictionary.h" />
+        <option value="$PROJECT_DIR$/src/C++/FieldMap.h" />
+        <option value="$PROJECT_DIR$/src/C++/Exceptions.h" />
+        <option value="$PROJECT_DIR$/src/C++/Message.h" />
+        <option value="$PROJECT_DIR$/src/C++/Message.cpp" />
+        <option value="$PROJECT_DIR$/src/python_pybind11/quickfix.hpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/python_pybind11/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/quickfix/Message.h" />
+        <option value="$PROJECT_DIR$/include/quickfix/Message.cpp" />
+        <option value="$PROJECT_DIR$/src/python_pybind11/quickfix.cpp" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2339" />
+    <option name="x" value="2375" />
     <option name="y" value="23" />
-    <option name="width" value="1298" />
-    <option name="height" value="1417" />
+    <option name="width" value="1480" />
+    <option name="height" value="1344" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -250,25 +370,29 @@
           <expand>
             <path>
               <item name="quickfix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickfix_eb" type="462c0819:PsiDirectoryNode" />
+              <item name="quickfix_barclays" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="quickfix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickfix_eb" type="462c0819:PsiDirectoryNode" />
+              <item name="quickfix_barclays" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quickfix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quickfix_barclays" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="quickfix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quickfix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quickfix_barclays" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="quickfix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickfix_eb" type="462c0819:PsiDirectoryNode" />
+              <item name="quickfix_barclays" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="C++" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quickfix" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickfix_eb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="C++" type="462c0819:PsiDirectoryNode" />
-              <item name="fix50sp2" type="462c0819:PsiDirectoryNode" />
+              <item name="python_pybind11" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -285,6 +409,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/python_pybind11" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -361,17 +490,19 @@
       <option name="presentableId" value="Default" />
       <updated>1558187331007</updated>
       <workItem from="1558187332362" duration="15627000" />
-      <workItem from="1558207289630" duration="1668000" />
+      <workItem from="1558207289630" duration="2452000" />
+      <workItem from="1558350565676" duration="12551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17295000" />
+    <option name="totallyTimeSpent" value="30630000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2339" y="23" width="1298" height="1417" extended-state="0" />
+    <frame x="2375" y="23" width="1480" height="1344" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2539809" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22531293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -396,208 +527,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/C++/pugixml.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152160">
-          <caret line="10144" column="63" selection-start-line="10144" selection-start-column="63" selection-end-line="10144" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/SessionSettings.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2355">
-          <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/pugixml.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17385">
-          <caret line="1159" column="50" selection-start-line="1159" selection-start-column="50" selection-end-line="1159" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/fix44/AllocationInstruction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/SessionFactory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="767">
-          <caret line="58" column="47" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/NullStore.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/MessageStore.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="124" column="17" selection-start-line="124" selection-start-column="17" selection-end-line="124" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/ThreadedSocketConnection.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="842">
-          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/ThreadedSSLSocketInitiator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1425">
-          <caret line="154" column="18" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/ThreadedSSLSocketConnection.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="163" column="36" selection-start-line="163" selection-start-column="36" selection-end-line="163" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/Acceptor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="93" column="19" selection-start-line="93" selection-start-column="19" selection-end-line="93" selection-end-column="19" />
-          <folding>
-            <element signature="e#903#927#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/Group.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/SSLSocketConnection.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="182" column="23" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/SSLSocketAcceptor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="157" column="45" selection-start-line="157" selection-start-column="45" selection-end-line="157" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/HttpMessage.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="94" column="65" selection-start-line="94" selection-start-column="65" selection-end-line="94" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/SocketConnection.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="895">
-          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/OdbcConnection.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="136" column="23" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/Parser.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/ThreadedSSLSocketAcceptor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="186" column="44" selection-start-line="186" selection-start-column="44" selection-end-line="186" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/Application.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1097">
-          <caret line="114" column="2" selection-start-line="114" selection-start-column="2" selection-end-line="114" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/SessionSettings.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1112">
-          <caret line="257" column="59" selection-start-line="257" selection-start-column="59" selection-end-line="257" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/Initiator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1331">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/Session.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-463">
-          <caret line="235" column="52" selection-start-line="235" selection-start-column="52" selection-end-line="235" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/Message.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="161" column="58" selection-start-line="161" selection-start-column="58" selection-end-line="161" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/FieldMap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1123">
-          <caret line="222" column="36" selection-start-line="222" selection-start-column="36" selection-end-line="222" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/OdbcStore.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="865">
-          <caret line="90" column="36" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/PostgreSQLStore.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="127" column="16" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/C++/HttpConnection.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -686,73 +615,266 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/examples/ordermatch/Application.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="e#858#882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/C++/MySQLStore.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
+        <state relative-caret-position="1740">
           <caret line="116" column="59" selection-start-line="116" selection-start-column="59" selection-end-line="116" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/C++/FileStore.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
+        <state relative-caret-position="1485">
           <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/C++/Dictionary.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
+        <state relative-caret-position="1005">
           <caret line="67" column="40" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/C++/SessionState.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
+        <state relative-caret-position="2865">
           <caret line="191" column="16" selection-start-line="191" selection-start-column="16" selection-end-line="191" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/C++/DataDictionary.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5625">
+          <caret line="375" column="47" selection-start-line="375" selection-start-column="47" selection-end-line="375" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/C++/MySQLConnection.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
+        <state relative-caret-position="1530">
           <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/C++/HttpParser.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
+        <state relative-caret-position="615">
           <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/C++/PostgreSQLConnection.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
+        <state relative-caret-position="1365">
           <caret line="91" column="23" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/C++/SocketServer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
+        <state relative-caret-position="945">
           <caret line="63" column="52" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/DataDictionary.h">
+    <entry file="file://$PROJECT_DIR$/src/python3/quickfix44.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="375" column="47" selection-start-line="375" selection-start-column="47" selection-end-line="375" selection-end-column="47" />
+        <state relative-caret-position="-188" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python/QuickfixPython.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/C++/FieldMap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1891">
+          <caret line="132" column="11" selection-start-line="132" selection-start-column="4" selection-end-line="132" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/ordermatch/Application.cpp">
+    <entry file="file://$PROJECT_DIR$/src/C++/FieldMap.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="108" column="10" selection-start-line="108" selection-start-column="10" selection-end-line="108" selection-end-column="10" />
+        <state relative-caret-position="235">
+          <caret line="144" column="37" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/C++/Exceptions.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2724">
+          <caret line="251" selection-start-line="251" selection-end-line="251" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python/quickfix.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python/QuickfixPython.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python/quickfix.i">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="218" column="40" selection-start-line="218" selection-start-column="33" selection-end-line="218" selection-end-column="40" />
+          <folding>
+            <element signature="e#18#1124#0" expanded="true" />
+            <element signature="e#4118#5311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/C++/Message.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="49" column="88" selection-start-line="49" selection-start-column="88" selection-end-line="49" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/C++/Message.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="126" column="107" selection-start-line="126" selection-start-column="2" selection-end-line="126" selection-end-column="107" />
+          <folding>
+            <element signature="e#881#902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python_pybind11/quickfix.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python_pybind11/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake/QuickfixPlatformSettings.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/FieldMap.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/Message.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="126" column="78" selection-start-line="126" selection-start-column="78" selection-end-line="126" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/Message.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/FieldMap.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="94" column="59" selection-start-line="94" selection-start-column="59" selection-end-line="94" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/Application.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="49" column="47" lean-forward="true" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake/QuickfixPrebuildSetup.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/SocketInitiator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/Initiator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/FileLog.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/Log.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/SessionSettings.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="224" column="69" selection-start-line="224" selection-start-column="18" selection-end-line="224" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/FileStore.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/MessageStore.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/python_pybind11/quickfix.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="653">
+          <caret line="128" column="36" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
         </state>
       </provider>
     </entry>

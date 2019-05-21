@@ -6,11 +6,14 @@ set(quickfix_python_VERSION ${quickfix_python_VERSION_MAJOR}.${quickfix_python_V
 set(quickfix_python_SOURCES QuickfixPython.cpp)
 set(quickfix_python_lib_name _${PROJECT_NAME})
 
+message(AUTHOR_WARNING ${PYTHON_LIBRARIES})
+
 add_library(${quickfix_python_lib_name} SHARED  ${quickfix_python_SOURCES})
 
 target_include_directories(${quickfix_python_lib_name} PRIVATE ${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/src/C++)
 
 target_link_libraries(${quickfix_python_lib_name} ${PROJECT_NAME})
+target_link_libraries(${quickfix_python_lib_name} /Library/Frameworks/Python.framework/Versions/3.7/lib/libpython3.7m.dylib)
 
 set_target_properties(${quickfix_python_lib_name} PROPERTIES VERSION ${quickfix_python_VERSION} SOVERSION ${quickfix_python_VERSION_MAJOR} PREFIX "")
 

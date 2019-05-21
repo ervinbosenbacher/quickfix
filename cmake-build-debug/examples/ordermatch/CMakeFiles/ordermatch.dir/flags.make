@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = -DHAVE_STD_SHARED_PTR=1 -DHAVE_STD_UNIQUE_PTR=1
 
-CXX_INCLUDES = -I/Users/ervinbosenbacher/workspace/research/quickfix_eb/include -I/Users/ervinbosenbacher/workspace/research/quickfix_eb/include/quickfix -I/Users/ervinbosenbacher/workspace/research/quickfix_eb 
+CXX_INCLUDES = -I/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include -I/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include/quickfix -I/Users/ervinbosenbacher/workspace/research/quickfix_barclays 
 

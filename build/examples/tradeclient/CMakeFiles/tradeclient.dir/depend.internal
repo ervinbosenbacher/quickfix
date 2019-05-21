@@ -91,8 +91,8 @@ examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.o
  ../include/quickfix/fixt11/Message.h
  ../include/quickfix/fixt11/MessageCracker.h
  ../include/quickfix/stdint_msvc.h
- /Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient/Application.cpp
- /Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient/Application.h
+ /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/Application.cpp
+ /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/Application.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o
  ..//config.h
  ../include/quickfix/./wx/sharedptr.h
@@ -196,6 +196,6 @@ examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o
  ../include/quickfix/fixt11/Message.h
  ../include/quickfix/fixt11/MessageCracker.h
  ../include/quickfix/stdint_msvc.h
- /Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient/Application.h
- /Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient/tradeclient.cpp
- /Users/ervinbosenbacher/workspace/research/quickfix_fork/src/getopt-repl.h
+ /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/Application.h
+ /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/tradeclient.cpp
+ /Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/getopt-repl.h

@@ -28,6 +28,7 @@ option(HAVE_POSTGRESQL "Build with PostgreSQL")
 option(HAVE_PYTHON "Build with default Python version")
 option(HAVE_PYTHON2 "Build with default Python2 version")
 option(HAVE_PYTHON3 "Build with default Python3 version")
+option(HAVE_PYBIND11 "Build python extension with pybind11")
 
 
 #Make sure that a previous config.h has not undefined HAVE_SSL
@@ -84,14 +85,14 @@ add_definitions("-DHAVE_STD_UNIQUE_PTR=1")
 endif()
 
 if (HAVE_PYTHON)
-find_package(PythonLibs REQUIRED)
-include_directories(${PYTHON_INCLUDE_DIRS})
+    find_package(PythonLibs REQUIRED)
+    include_directories(${PYTHON_INCLUDE_DIRS})
 elseif (HAVE_PYTHON2)
-find_package(PythonLibs 2 REQUIRED)
-include_directories(${PYTHON_INCLUDE_DIRS})
+    find_package(PythonLibs 2 REQUIRED)
+    include_directories(${PYTHON_INCLUDE_DIRS})
 elseif (HAVE_PYTHON3)
-find_package(PythonLibs 3 REQUIRED)
-include_directories(${PYTHON_INCLUDE_DIRS})
+    find_package(PythonLibs 3 REQUIRED)
+    include_directories(${PYTHON_INCLUDE_DIRS})
 endif ()
 
 if( WIN32 OR ${CMAKE_SYSTEM_NAME} STREQUAL "Linux" )

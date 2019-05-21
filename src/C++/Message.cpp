@@ -47,6 +47,24 @@ Message::Message()
   
 }
 
+Message::Message( std::vector<int> header, std::vector<int> trailer, std::vector<int> body )
+    : m_validStructure( true )
+    , m_tag(0) {
+
+    header.push_back(0);
+    FIX::message_order _header(&header[0]);
+
+    trailer.push_back(0);
+    FIX::message_order _trailer(&trailer[0]);
+
+    body.push_back(0);
+    FIX::message_order _body(&body[0]);
+
+    setMessageOrder(_body);
+    m_header = _header;
+    m_trailer = _trailer;
+}
+
 Message::Message(const message_order &hdrOrder, const message_order &trlOrder, const message_order& order)
     : FieldMap(order)
     , m_header(hdrOrder)

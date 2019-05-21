@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/executor/C++
+# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/executor/C++
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.14.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork
+CMAKE_SOURCE_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_barclays
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork/build
+CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build
 
 # Utility rule file for tradeclient_target.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork/buil
 include examples/tradeclient/CMakeFiles/tradeclient_target.dir/progress.make
 
 examples/tradeclient/CMakeFiles/tradeclient_target:
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/examples/tradeclient && /usr/local/Cellar/cmake/3.14.3/bin/cmake -E create_symlink /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/examples/tradeclient/tradeclient /Users/ervinbosenbacher/workspace/research/quickfix_fork/bin/tradeclient
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/examples/tradeclient && /usr/local/Cellar/cmake/3.14.3/bin/cmake -E create_symlink /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/examples/tradeclient/tradeclient /Users/ervinbosenbacher/workspace/research/quickfix_barclays/bin/tradeclient
 
 tradeclient_target: examples/tradeclient/CMakeFiles/tradeclient_target
 tradeclient_target: examples/tradeclient/CMakeFiles/tradeclient_target.dir/build.make
@@ -67,10 +67,10 @@ examples/tradeclient/CMakeFiles/tradeclient_target.dir/build: tradeclient_target
 .PHONY : examples/tradeclient/CMakeFiles/tradeclient_target.dir/build
 
 examples/tradeclient/CMakeFiles/tradeclient_target.dir/clean:
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/examples/tradeclient && $(CMAKE_COMMAND) -P CMakeFiles/tradeclient_target.dir/cmake_clean.cmake
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/examples/tradeclient && $(CMAKE_COMMAND) -P CMakeFiles/tradeclient_target.dir/cmake_clean.cmake
 .PHONY : examples/tradeclient/CMakeFiles/tradeclient_target.dir/clean
 
 examples/tradeclient/CMakeFiles/tradeclient_target.dir/depend:
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_fork/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ervinbosenbacher/workspace/research/quickfix_fork /Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/tradeclient /Users/ervinbosenbacher/workspace/research/quickfix_fork/build /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/examples/tradeclient /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/examples/tradeclient/CMakeFiles/tradeclient_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ervinbosenbacher/workspace/research/quickfix_barclays /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/examples/tradeclient /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/examples/tradeclient/CMakeFiles/tradeclient_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/tradeclient/CMakeFiles/tradeclient_target.dir/depend
 

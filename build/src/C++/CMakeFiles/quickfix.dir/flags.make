@@ -6,5 +6,5 @@ CXX_FLAGS =  -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 CXX_DEFINES = -DHAVE_STD_SHARED_PTR=1 -DHAVE_STD_UNIQUE_PTR=1 -Dquickfix_EXPORTS
 
-CXX_INCLUDES = -I/Users/ervinbosenbacher/workspace/research/quickfix_fork -I/Users/ervinbosenbacher/workspace/research/quickfix_fork/src -I/Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++ 
+CXX_INCLUDES = -I/Library/Frameworks/Python.framework/Versions/3.7/include/python3.7m -I/Users/ervinbosenbacher/workspace/research/quickfix_barclays -I/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src -I/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++ 
 

@@ -17,6 +17,9 @@
 %rename(SocketInitiatorBase) FIX::SocketInitiator;
 %rename(SocketAcceptorBase) FIX::SocketAcceptor;
 
+%include "std_vector.i"
+%template(VectorInt) std::vector<int>;
+
 %{
 #include <config.h>
 #include <Exceptions.h>

@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_eb
+CMAKE_SOURCE_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_barclays
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include examples/tradeclient/CMakeFiles/tradeclient.dir/depend.make
@@ -59,29 +59,29 @@ include examples/tradeclient/CMakeFiles/tradeclient.dir/flags.make
 
 examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.o: examples/tradeclient/CMakeFiles/tradeclient.dir/flags.make
 examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.o: ../examples/tradeclient/Application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.o"
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tradeclient.dir/Application.cpp.o -c /Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.o"
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tradeclient.dir/Application.cpp.o -c /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/Application.cpp
 
 examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tradeclient.dir/Application.cpp.i"
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/Application.cpp > CMakeFiles/tradeclient.dir/Application.cpp.i
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/Application.cpp > CMakeFiles/tradeclient.dir/Application.cpp.i
 
 examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tradeclient.dir/Application.cpp.s"
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/Application.cpp -o CMakeFiles/tradeclient.dir/Application.cpp.s
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/Application.cpp -o CMakeFiles/tradeclient.dir/Application.cpp.s
 
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: examples/tradeclient/CMakeFiles/tradeclient.dir/flags.make
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../examples/tradeclient/tradeclient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o"
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tradeclient.dir/tradeclient.cpp.o -c /Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/tradeclient.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o"
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tradeclient.dir/tradeclient.cpp.o -c /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/tradeclient.cpp
 
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tradeclient.dir/tradeclient.cpp.i"
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/tradeclient.cpp > CMakeFiles/tradeclient.dir/tradeclient.cpp.i
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/tradeclient.cpp > CMakeFiles/tradeclient.dir/tradeclient.cpp.i
 
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tradeclient.dir/tradeclient.cpp.s"
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/tradeclient.cpp -o CMakeFiles/tradeclient.dir/tradeclient.cpp.s
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/tradeclient.cpp -o CMakeFiles/tradeclient.dir/tradeclient.cpp.s
 
 # Object files for target tradeclient
 tradeclient_OBJECTS = \
@@ -96,8 +96,8 @@ examples/tradeclient/tradeclient: examples/tradeclient/CMakeFiles/tradeclient.di
 examples/tradeclient/tradeclient: examples/tradeclient/CMakeFiles/tradeclient.dir/build.make
 examples/tradeclient/tradeclient: src/C++/libquickfix.16.0.1.dylib
 examples/tradeclient/tradeclient: examples/tradeclient/CMakeFiles/tradeclient.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tradeclient"
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tradeclient.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tradeclient"
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tradeclient.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/tradeclient/CMakeFiles/tradeclient.dir/build: examples/tradeclient/tradeclient
@@ -105,10 +105,10 @@ examples/tradeclient/CMakeFiles/tradeclient.dir/build: examples/tradeclient/trad
 .PHONY : examples/tradeclient/CMakeFiles/tradeclient.dir/build
 
 examples/tradeclient/CMakeFiles/tradeclient.dir/clean:
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient && $(CMAKE_COMMAND) -P CMakeFiles/tradeclient.dir/cmake_clean.cmake
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient && $(CMAKE_COMMAND) -P CMakeFiles/tradeclient.dir/cmake_clean.cmake
 .PHONY : examples/tradeclient/CMakeFiles/tradeclient.dir/clean
 
 examples/tradeclient/CMakeFiles/tradeclient.dir/depend:
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ervinbosenbacher/workspace/research/quickfix_eb /Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient /Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ervinbosenbacher/workspace/research/quickfix_barclays /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient /Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/tradeclient/CMakeFiles/tradeclient.dir/depend
 

@@ -99,3 +99,7 @@ add_subdirectory(python2)
 elseif (HAVE_PYTHON3)
 add_subdirectory(python3)
 endif ()
+
+if (HAVE_PYBIND11)
+add_subdirectory(python_pybind11)
+endif ()

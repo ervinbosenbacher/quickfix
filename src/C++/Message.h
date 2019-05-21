@@ -124,6 +124,8 @@ class Message : public FieldMap
 public:
   Message();
 
+  Message( std::vector<int> header, std::vector<int> trailer, std::vector<int> body );
+
   /// Construct message with a specified order of fields
   Message( const message_order& hdrOrder, const message_order& trlOrder,  const message_order& order);
 

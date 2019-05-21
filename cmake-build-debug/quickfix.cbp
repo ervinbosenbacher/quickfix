@@ -8,97 +8,97 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\src\;CMake Files\src\C++\;CMake Files\examples\;CMake Files\examples\executor\;CMake Files\examples\executor\C++\;CMake Files\examples\tradeclient\;CMake Files\examples\ordermatch\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="QUICKFIX_HEADERS_LINK">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 QUICKFIX_HEADERS_LINK"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 QUICKFIX_HEADERS_LINK"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="quickfix">
-				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/libquickfix.dylib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++"/>
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++/libquickfix.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
 					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
@@ -107,24 +107,24 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 quickfix"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 quickfix"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="quickfix/fast">
-				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/libquickfix.dylib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++"/>
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++/libquickfix.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
 					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
@@ -133,34 +133,34 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 quickfix/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 quickfix/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/src/C++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="executor_target">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 executor_target"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 executor_target"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="executor">
-				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/executor" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++"/>
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/executor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
 					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include/quickfix"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
@@ -169,24 +169,24 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 executor"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 executor"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="executor/fast">
-				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/executor" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++"/>
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/executor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
 					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include/quickfix"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
@@ -195,34 +195,34 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 executor/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 executor/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/executor/C++/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tradeclient_target">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 tradeclient_target"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 tradeclient_target"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tradeclient">
-				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/tradeclient" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient"/>
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/tradeclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
 					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include/quickfix"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
@@ -231,24 +231,24 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 tradeclient"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 tradeclient"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tradeclient/fast">
-				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/tradeclient" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient"/>
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/tradeclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
 					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include/quickfix"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
@@ -257,34 +257,34 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 tradeclient/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 tradeclient/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/tradeclient/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ordermatch_target">
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 ordermatch_target"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 ordermatch_target"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ordermatch">
-				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/ordermatch" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch"/>
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/ordermatch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
 					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include/quickfix"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
@@ -293,24 +293,24 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 ordermatch"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 ordermatch"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ordermatch/fast">
-				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/ordermatch" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch"/>
+				<Option output="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/ordermatch" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DHAVE_STD_SHARED_PTR=1"/>
 					<Add option="-DHAVE_STD_UNIQUE_PTR=1"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb/include/quickfix"/>
-					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_eb"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/include/quickfix"/>
+					<Add directory="/Users/ervinbosenbacher/workspace/research/quickfix_barclays"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
@@ -319,350 +319,350 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 ordermatch/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 ordermatch/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake-build-debug/examples/ordermatch/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/executor/C++/Application.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/executor/C++/Application.cpp">
 			<Option target="executor"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/executor/C++/Application.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/executor/C++/Application.h">
 			<Option target="executor"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/executor/C++/executor.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/executor/C++/executor.cpp">
 			<Option target="executor"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/ordermatch/Application.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch/Application.cpp">
 			<Option target="ordermatch"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/ordermatch/Application.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch/Application.h">
 			<Option target="ordermatch"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/ordermatch/Market.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch/Market.cpp">
 			<Option target="ordermatch"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/ordermatch/Market.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch/Market.h">
 			<Option target="ordermatch"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/ordermatch/ordermatch.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch/ordermatch.cpp">
 			<Option target="ordermatch"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/Application.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/Application.cpp">
 			<Option target="tradeclient"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/Application.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/Application.h">
 			<Option target="tradeclient"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/tradeclient.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/tradeclient.cpp">
 			<Option target="tradeclient"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Acceptor.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Acceptor.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Acceptor.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Acceptor.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/DataDictionary.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/DataDictionary.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/DataDictionary.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/DataDictionary.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/DataDictionaryProvider.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/DataDictionaryProvider.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/DataDictionaryProvider.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/DataDictionaryProvider.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Dictionary.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Dictionary.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Dictionary.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Dictionary.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/FieldConvertors.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/FieldConvertors.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/FieldConvertors.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/FieldConvertors.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/FieldMap.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/FieldMap.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/FieldMap.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/FieldMap.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/FieldTypes.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/FieldTypes.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/FieldTypes.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/FieldTypes.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/FileLog.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/FileLog.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/FileLog.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/FileLog.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/FileStore.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/FileStore.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/FileStore.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/FileStore.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Group.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Group.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Group.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Group.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/HttpConnection.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/HttpConnection.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/HttpConnection.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/HttpConnection.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/HttpMessage.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/HttpMessage.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/HttpMessage.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/HttpMessage.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/HttpParser.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/HttpParser.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/HttpParser.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/HttpParser.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/HttpServer.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/HttpServer.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/HttpServer.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/HttpServer.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Initiator.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Initiator.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Initiator.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Initiator.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Log.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Log.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Log.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Log.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Message.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Message.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Message.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Message.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/MessageSorters.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/MessageSorters.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/MessageSorters.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/MessageSorters.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/MessageStore.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/MessageStore.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/MessageStore.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/MessageStore.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/MySQLLog.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/MySQLLog.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/MySQLLog.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/MySQLLog.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/MySQLStore.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/MySQLStore.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/MySQLStore.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/MySQLStore.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/NullStore.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/NullStore.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/NullStore.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/NullStore.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/OdbcLog.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/OdbcLog.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/OdbcLog.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/OdbcLog.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/OdbcStore.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/OdbcStore.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/OdbcStore.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/OdbcStore.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/PUGIXML_DOMDocument.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/PUGIXML_DOMDocument.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/PUGIXML_DOMDocument.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/PUGIXML_DOMDocument.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Parser.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Parser.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Parser.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Parser.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/PostgreSQLLog.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/PostgreSQLLog.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/PostgreSQLLog.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/PostgreSQLLog.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/PostgreSQLStore.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/PostgreSQLStore.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/PostgreSQLStore.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/PostgreSQLStore.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Session.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Session.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Session.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Session.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SessionFactory.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SessionFactory.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SessionFactory.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SessionFactory.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SessionSettings.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SessionSettings.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SessionSettings.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SessionSettings.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Settings.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Settings.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Settings.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Settings.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketAcceptor.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketAcceptor.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketAcceptor.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketAcceptor.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketConnection.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketConnection.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketConnection.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketConnection.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketConnector.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketConnector.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketConnector.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketConnector.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketInitiator.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketInitiator.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketInitiator.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketInitiator.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketMonitor.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketMonitor.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketMonitor.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketMonitor.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketServer.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketServer.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/SocketServer.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/SocketServer.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/ThreadedSocketAcceptor.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/ThreadedSocketAcceptor.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/ThreadedSocketAcceptor.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/ThreadedSocketAcceptor.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/ThreadedSocketConnection.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/ThreadedSocketConnection.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/ThreadedSocketConnection.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/ThreadedSocketConnection.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/ThreadedSocketInitiator.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/ThreadedSocketInitiator.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/ThreadedSocketInitiator.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/ThreadedSocketInitiator.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/TimeRange.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/TimeRange.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/TimeRange.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/TimeRange.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Utility.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Utility.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/Utility.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/Utility.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/pugixml.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/pugixml.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/pugixml.hpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/pugixml.hpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/stdafx.cpp">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/stdafx.cpp">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/stdafx.h">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/stdafx.h">
 			<Option target="quickfix"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/CMakeLists.txt">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake/FindSharedPtr.cmake">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake/FindSharedPtr.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake/FindUniquePtr.cmake">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake/FindUniquePtr.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake/QuickfixPlatformSettings.cmake">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake/QuickfixPlatformSettings.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/cmake/QuickfixPrebuildSetup.cmake">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/cmake/QuickfixPrebuildSetup.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/CMakeLists.txt">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/src/C++/CMakeLists.txt">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\C++\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/CMakeLists.txt">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\examples\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/executor/CMakeLists.txt">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/executor/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\examples\executor\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/executor/C++/CMakeLists.txt">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/executor/C++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\examples\executor\C++\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/tradeclient/CMakeLists.txt">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\examples\tradeclient\"/>
 		</Unit>
-		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/ordermatch/CMakeLists.txt">
+		<Unit filename="/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\examples\ordermatch\"/>
 		</Unit>
 	</Project>

@@ -140,6 +140,11 @@ public:
     setField( fieldBase );
   }
 
+  void setMessageOrder( const message_order& order = message_order( message_order::normal ) ) {
+      m_order = order;
+      m_fields.reserve(DEFAULT_SIZE);
+  }
+
   /// Get a field if set
   bool getFieldIfSet( FieldBase& field ) const
   {

@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.14.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork
+CMAKE_SOURCE_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_barclays
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork/build
+CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build
 
 # Utility rule file for QUICKFIX_HEADERS_LINK.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork/buil
 include CMakeFiles/QUICKFIX_HEADERS_LINK.dir/progress.make
 
 CMakeFiles/QUICKFIX_HEADERS_LINK:
-	/usr/local/Cellar/cmake/3.14.3/bin/cmake -E make_directory /Users/ervinbosenbacher/workspace/research/quickfix_fork/include/
-	/usr/local/Cellar/cmake/3.14.3/bin/cmake -E create_symlink /Users/ervinbosenbacher/workspace/research/quickfix_fork/src/C++ /Users/ervinbosenbacher/workspace/research/quickfix_fork/include/quickfix
+	/usr/local/Cellar/cmake/3.14.3/bin/cmake -E make_directory /Users/ervinbosenbacher/workspace/research/quickfix_barclays/include/
+	/usr/local/Cellar/cmake/3.14.3/bin/cmake -E create_symlink /Users/ervinbosenbacher/workspace/research/quickfix_barclays/src/C++ /Users/ervinbosenbacher/workspace/research/quickfix_barclays/include/quickfix
 
 QUICKFIX_HEADERS_LINK: CMakeFiles/QUICKFIX_HEADERS_LINK
 QUICKFIX_HEADERS_LINK: CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make
@@ -72,6 +72,6 @@ CMakeFiles/QUICKFIX_HEADERS_LINK.dir/clean:
 .PHONY : CMakeFiles/QUICKFIX_HEADERS_LINK.dir/clean
 
 CMakeFiles/QUICKFIX_HEADERS_LINK.dir/depend:
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_fork/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ervinbosenbacher/workspace/research/quickfix_fork /Users/ervinbosenbacher/workspace/research/quickfix_fork /Users/ervinbosenbacher/workspace/research/quickfix_fork/build /Users/ervinbosenbacher/workspace/research/quickfix_fork/build /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/CMakeFiles/QUICKFIX_HEADERS_LINK.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ervinbosenbacher/workspace/research/quickfix_barclays /Users/ervinbosenbacher/workspace/research/quickfix_barclays /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/CMakeFiles/QUICKFIX_HEADERS_LINK.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/QUICKFIX_HEADERS_LINK.dir/depend
 

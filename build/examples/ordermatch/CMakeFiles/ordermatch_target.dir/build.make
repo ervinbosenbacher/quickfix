@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.14.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork
+CMAKE_SOURCE_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_barclays
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork/build
+CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build
 
 # Utility rule file for ordermatch_target.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/ervinbosenbacher/workspace/research/quickfix_fork/buil
 include examples/ordermatch/CMakeFiles/ordermatch_target.dir/progress.make
 
 examples/ordermatch/CMakeFiles/ordermatch_target:
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/examples/ordermatch && /usr/local/Cellar/cmake/3.14.3/bin/cmake -E create_symlink /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/examples/ordermatch/ordermatch /Users/ervinbosenbacher/workspace/research/quickfix_fork/bin/ordermatch
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/examples/ordermatch && /usr/local/Cellar/cmake/3.14.3/bin/cmake -E create_symlink /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/examples/ordermatch/ordermatch /Users/ervinbosenbacher/workspace/research/quickfix_barclays/bin/ordermatch
 
 ordermatch_target: examples/ordermatch/CMakeFiles/ordermatch_target
 ordermatch_target: examples/ordermatch/CMakeFiles/ordermatch_target.dir/build.make
@@ -67,10 +67,10 @@ examples/ordermatch/CMakeFiles/ordermatch_target.dir/build: ordermatch_target
 .PHONY : examples/ordermatch/CMakeFiles/ordermatch_target.dir/build
 
 examples/ordermatch/CMakeFiles/ordermatch_target.dir/clean:
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/examples/ordermatch && $(CMAKE_COMMAND) -P CMakeFiles/ordermatch_target.dir/cmake_clean.cmake
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/examples/ordermatch && $(CMAKE_COMMAND) -P CMakeFiles/ordermatch_target.dir/cmake_clean.cmake
 .PHONY : examples/ordermatch/CMakeFiles/ordermatch_target.dir/clean
 
 examples/ordermatch/CMakeFiles/ordermatch_target.dir/depend:
-	cd /Users/ervinbosenbacher/workspace/research/quickfix_fork/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ervinbosenbacher/workspace/research/quickfix_fork /Users/ervinbosenbacher/workspace/research/quickfix_fork/examples/ordermatch /Users/ervinbosenbacher/workspace/research/quickfix_fork/build /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/examples/ordermatch /Users/ervinbosenbacher/workspace/research/quickfix_fork/build/examples/ordermatch/CMakeFiles/ordermatch_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ervinbosenbacher/workspace/research/quickfix_barclays /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/examples/ordermatch /Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/examples/ordermatch/CMakeFiles/ordermatch_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/ordermatch/CMakeFiles/ordermatch_target.dir/depend
 

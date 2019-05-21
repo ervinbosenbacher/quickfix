@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_fork/src
+# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_barclays/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/ervinbosenbacher/workspace/research/quickfix_fork/build/src/C++/cmake_install.cmake")
+  include("/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/src/C++/cmake_install.cmake")
+  include("/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/src/python/cmake_install.cmake")
+  include("/Users/ervinbosenbacher/workspace/research/quickfix_barclays/build/src/python_pybind11/cmake_install.cmake")
 
 endif()
 

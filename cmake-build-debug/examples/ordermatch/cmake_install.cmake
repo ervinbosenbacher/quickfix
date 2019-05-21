@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_eb/examples/ordermatch
+# Install script for directory: /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
