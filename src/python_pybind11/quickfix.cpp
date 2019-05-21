@@ -129,20 +129,24 @@ _session_settings
     .def(py::init<const std::string&>());
 
 
+py::class_<FIX::MessageStoreFactory>(m, "MessageStoreFactory");
+
 // FileStoreFactory
-py::class_<FIX::FileStoreFactory> _file_store_factory(m, "FileStoreFactory");
+py::class_<FIX::FileStoreFactory, FIX::MessageStoreFactory> _file_store_factory(m, "FileStoreFactory");
 _file_store_factory
     .def(py::init<const FIX::SessionSettings&>());
 
+// LogFactory
+py::class_<FIX::LogFactory> _log_factory(m, "LogFactory");
 
 // FileLogFactory
-py::class_<FIX::FileLogFactory> _file_log_factory(m, "FileLogFactory");
+py::class_<FIX::FileLogFactory, FIX::LogFactory> _file_log_factory(m, "FileLogFactory");
 _file_log_factory
     .def(py::init<const FIX::SessionSettings&>());
 
 
 // ScreenLogFactory
-py::class_<FIX::ScreenLogFactory> _screen_log_factory(m, "ScreenLogFactory");
+py::class_<FIX::ScreenLogFactory, FIX::LogFactory> _screen_log_factory(m, "ScreenLogFactory");
 _screen_log_factory
     .def(py::init<const FIX::SessionSettings&>());
 

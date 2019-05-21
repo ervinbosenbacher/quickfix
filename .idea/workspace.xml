@@ -19,124 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c82f3ab-db4f-49b6-bef0-1b91bb3406e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/python_pybind11/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/python_pybind11/quickfix.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/python_pybind11/quickfix.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor_target.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor_target.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/executor" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/executor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch_target.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/CMakeFiles/ordermatch_target.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/ordermatch" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/ordermatch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient_target.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient_target.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/tradeclient" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/tradeclient" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/C++/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/QUICKFIX_HEADERS_LINK.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/executor.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/executor.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/executor.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/executor.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/executor.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/executor.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/executor.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/executor.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/executor_target.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/CMakeFiles/executor_target.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/executor/C++/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/executor/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/executor/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/executor/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/executor/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/ordermatch.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/ordermatch.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/ordermatch.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/ordermatch.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/ordermatch.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/ordermatch.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/ordermatch.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/ordermatch.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/ordermatch_target.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/CMakeFiles/ordermatch_target.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/ordermatch/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient_target.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/CMakeFiles/tradeclient_target.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/tradeclient/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/quickfix.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/quickfix.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/C++/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/C++/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/C++/CMakeFiles/quickfix.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/C++/CMakeFiles/quickfix.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/C++/CMakeFiles/quickfix.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/C++/CMakeFiles/quickfix.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/C++/CMakeFiles/quickfix.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/C++/CMakeFiles/quickfix.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/C++/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/C++/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybind11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/C++/Exceptions.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/C++/Exceptions.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/C++/FieldMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/C++/FieldMap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/C++/Message.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/C++/Message.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/C++/Message.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/C++/Message.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/python/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/python/QuickfixPython.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/QuickfixPython.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/python/QuickfixPython.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/QuickfixPython.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/python/quickfix.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/quickfix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/python/swig.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/python/swig.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/python3/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/python3/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/quickfix.i" beforeDir="false" afterPath="$PROJECT_DIR$/src/quickfix.i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/python_pybind11/quickfix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/python_pybind11/quickfix.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -200,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/python_pybind11/quickfix.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="128" column="36" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
+            <state relative-caret-position="321">
+              <caret line="139" column="11" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -209,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/quickfix/MessageStore.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
+            <state relative-caret-position="242">
               <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
             </state>
           </provider>
@@ -232,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/quickfix/FileStore.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="38" column="51" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="51" />
+            <state relative-caret-position="343">
+              <caret line="38" column="36" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -241,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/quickfix/Log.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="55" column="42" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="42" />
+            <state relative-caret-position="236">
+              <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -354,10 +237,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2375" />
     <option name="y" value="23" />
-    <option name="width" value="1480" />
-    <option name="height" value="1344" />
+    <option name="width" value="1298" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -491,18 +373,18 @@
       <updated>1558187331007</updated>
       <workItem from="1558187332362" duration="15627000" />
       <workItem from="1558207289630" duration="2452000" />
-      <workItem from="1558350565676" duration="12551000" />
+      <workItem from="1558350565676" duration="13545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30630000" />
+    <option name="totallyTimeSpent" value="31624000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2375" y="23" width="1480" height="1344" extended-state="0" />
+    <frame x="0" y="23" width="1298" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22531293" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25796178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -840,16 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/quickfix/FileLog.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/quickfix/Log.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="55" column="42" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/quickfix/SessionSettings.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -857,24 +729,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/Log.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/include/quickfix/FileStore.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="38" column="51" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="51" />
+        <state relative-caret-position="343">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/quickfix/MessageStore.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
+        <state relative-caret-position="242">
           <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/FileLog.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/python_pybind11/quickfix.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="128" column="36" selection-start-line="128" selection-start-column="36" selection-end-line="128" selection-end-column="36" />
+        <state relative-caret-position="321">
+          <caret line="139" column="11" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
         </state>
       </provider>
     </entry>
