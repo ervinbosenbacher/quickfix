@@ -128,7 +128,13 @@ py::class_<FIX::SessionSettings> _session_settings(m, "SessionSettings");
 _session_settings
     .def(py::init<const std::string&>());
 
+//SessionID
+py::class_<FIX::SessionID> _session_id(m, "SessionID");
+_session_id
+    .def(py::init<>())
+    .def("toString", (std::string (FIX::SessionID::*)() const) &FIX::SessionID::toString);
 
+//MessageStoreFactory
 py::class_<FIX::MessageStoreFactory>(m, "MessageStoreFactory");
 
 // FileStoreFactory
