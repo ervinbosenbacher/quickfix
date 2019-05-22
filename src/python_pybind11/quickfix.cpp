@@ -2,18 +2,30 @@
 // Created by Ervin Bosenbacher on 2019-05-20.
 //
 
+// pybind
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>
+#include <pybind11/functional.h>
+
+// quickfix stuff
 #include <quickfix/Application.h>
 #include <quickfix/Message.h>
 #include <quickfix/Initiator.h>
 #include <quickfix/SessionID.h>
 #include <quickfix/SocketInitiator.h>
+#include <quickfix/MessageCracker.h>
 #include <quickfix/SessionSettings.h>
 #include <quickfix/Log.h>
 #include <quickfix/FileLog.h>
 #include <quickfix/MessageStore.h>
 #include <quickfix/FileStore.h>
+
+#include <quickfix/fix44/Message.h>
+
+
+// std stuff
+#include <memory>
+#include <functional>
 
 namespace py = pybind11;
 
@@ -24,81 +36,269 @@ int add(int i, int j) {
 //void init_ex1(py::module &m) {
 //    m.def("add", [](int a, int b) { return a + b; });
 //}
-class PyApplication : public FIX::Application {
-public:
-    /* Inherit the constructors */
-    using FIX::Application::Application;
 
-    /// Notification of a session begin created
-    void onCreate(const FIX::SessionID& sessionID) override {
-        PYBIND11_OVERLOAD_PURE(
-                void, /* Return type */
-                FIX::Application,      /* Parent class */
-                onCreate,          /* Name of function in C++ (must match Python name) */
-                sessionID      /* Argument(s) */
-        );
-    }
+namespace quickfix {
 
-    /// Notification of a session successfully logging on
-    void onLogon(const FIX::SessionID& sessionID) override {
-        PYBIND11_OVERLOAD_PURE(
-                void, /* Return type */
-                FIX::Application,      /* Parent class */
-                onLogon,          /* Name of function in C++ (must match Python name) */
-                sessionID      /* Argument(s) */
-        );
-    }
+    class Application
+            : public FIX::Application
+            , public FIX::MessageCracker {
 
-    /// Notification of a session logging off or disconnecting
-    void onLogout(const FIX::SessionID& sessionID) override {
-        PYBIND11_OVERLOAD_PURE(
-                void, /* Return type */
-                FIX::Application,      /* Parent class */
-                onLogout,          /* Name of function in C++ (must match Python name) */
-                sessionID      /* Argument(s) */
-        );
-    }
+    public:
+        Application() {}
 
-    /// Notification of admin message being sent to target
-    void toAdmin(FIX::Message& message, const FIX::SessionID& sessionID) override {
-        PYBIND11_OVERLOAD_PURE(
-                void, /* Return type */
-                FIX::Application,      /* Parent class */
-                toAdmin,          /* Name of function in C++ (must match Python name) */
-                message, sessionID      /* Argument(s) */
-        );
-    }
+        /// Notification of a session begin created
+        void onCreate(const FIX::SessionID& sessionID) {
+            if (_funcOnCreate) {
+                _funcOnCreate(sessionID);
+            }
+        }
 
-    /// Notification of app message being sent to target
-    void toApp(FIX::Message& message, const FIX::SessionID& sessionID) override {
-        PYBIND11_OVERLOAD_PURE(
-                void, /* Return type */
-                FIX::Application,      /* Parent class */
-                toApp,          /* Name of function in C++ (must match Python name) */
-                message, sessionID      /* Argument(s) */
-        );
-    }
+        /// Notification of a session successfully logging on
+        void onLogon( const FIX::SessionID& sessionID) {
+            if (_funcOnLogon) {
+                _funcOnLogon(sessionID);
+            }
+        }
 
-    /// Notification of admin message being received from target
-    void fromAdmin(const FIX::Message& message, const FIX::SessionID& sessionID) override {
-        PYBIND11_OVERLOAD_PURE(
-                void, /* Return type */
-                FIX::Application,      /* Parent class */
-                fromAdmin,          /* Name of function in C++ (must match Python name) */
-                message, sessionID      /* Argument(s) */
-        );
-    }
+        /// Notification of a session logging off or disconnecting
+        void onLogout( const FIX::SessionID& ) { }
+        /// Notification of admin message being sent to target
+        void toAdmin( FIX::Message&, const FIX::SessionID& ) {}
+        /// Notification of app message being sent to target
+        void toApp( FIX::Message&, const FIX::SessionID& ) {}
+        /// Notification of admin message being received from target
+        void fromAdmin( const FIX::Message&, const FIX::SessionID& ) {}
+        /// Notification of app message being received from target
+        void fromApp( const FIX::Message& message, const FIX::SessionID& sessionID) {
+            crack(message, sessionID);
+        }
 
-    /// Notification of app message being received from target
-    void fromApp(const FIX::Message& message, const FIX::SessionID& sessionID) override {
-        PYBIND11_OVERLOAD_PURE(
-                void, /* Return type */
-                FIX::Application,      /* Parent class */
-                fromApp,          /* Name of function in C++ (must match Python name) */
-                message, sessionID      /* Argument(s) */
-        );
-    }
-};
+        // cracked stuff
+        void onMessage(const FIX44::Heartbeat& msg, const FIX::SessionID& sid) {
+            if (_funcOnMessageHeartbeat) {
+                _funcOnMessageHeartbeat(msg, sid);
+            }
+        }
+
+        void onMessage(const FIX44::TestRequest& msg, const FIX::SessionID& sid) {
+            if (_funcOnMessageTestRequest) {
+                _funcOnMessageTestRequest(msg, sid);
+            }
+        }
+
+        virtual void onMessage(const FIX44::ResendRequest& msg, const FIX::SessionID& sid) {
+            if (_funcOnMessageResendRequest) {
+                _funcOnMessageResendRequest(msg, sid);
+            }
+        }
+        /*
+        virtual void onMessage( const Reject&, const FIX::SessionID& )
+        {}
+        virtual void onMessage( const SequenceReset&, const FIX::SessionID& )
+        {}
+        virtual void onMessage( const Logout&, const FIX::SessionID& )
+        {}
+        virtual void onMessage( const IOI&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const Advertisement&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const ExecutionReport&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const OrderCancelReject&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const Logon&, const FIX::SessionID& )
+        {}
+        virtual void onMessage( const News&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const Email&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const NewOrderSingle&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const NewOrderList&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const OrderCancelRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const OrderCancelReplaceRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const OrderStatusRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const AllocationInstruction&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const ListCancelRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const ListExecute&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const ListStatusRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const ListStatus&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const AllocationInstructionAck&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const DontKnowTrade&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const QuoteRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const Quote&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const SettlementInstructions&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const MarketDataRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const MarketDataSnapshotFullRefresh&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const MarketDataIncrementalRefresh&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const MarketDataRequestReject&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const QuoteCancel&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const QuoteStatusRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const MassQuoteAcknowledgement&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const SecurityDefinitionRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const SecurityDefinition&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const SecurityStatusRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const SecurityStatus&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const TradingSessionStatusRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const TradingSessionStatus&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const MassQuote&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const BusinessMessageReject&, const FIX::SessionID& )
+        {}
+        virtual void onMessage( const BidRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const BidResponse&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const ListStrikePrice&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const XMLnonFIX&, const FIX::SessionID& )
+        {}
+        virtual void onMessage( const RegistrationInstructions&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const RegistrationInstructionsResponse&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const OrderMassCancelRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const OrderMassCancelReport&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const NewOrderCross&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const CrossOrderCancelReplaceRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const CrossOrderCancelRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const SecurityTypeRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const SecurityTypes&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const SecurityListRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const SecurityList&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const DerivativeSecurityListRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const DerivativeSecurityList&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const NewOrderMultileg&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const MultilegOrderCancelReplace&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const TradeCaptureReportRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const TradeCaptureReport&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const OrderMassStatusRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const QuoteRequestReject&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const RFQRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const QuoteStatusReport&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const QuoteResponse&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const Confirmation&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const PositionMaintenanceRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const PositionMaintenanceReport&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const RequestForPositions&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const RequestForPositionsAck&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const PositionReport&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const TradeCaptureReportRequestAck&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const TradeCaptureReportAck&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const AllocationReport&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const AllocationReportAck&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const ConfirmationAck&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const SettlementInstructionRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const AssignmentReport&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const CollateralRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const CollateralAssignment&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const CollateralResponse&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const CollateralReport&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const CollateralInquiry&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const NetworkCounterpartySystemStatusRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const NetworkCounterpartySystemStatusResponse&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const UserRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const UserResponse&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const CollateralInquiryAck&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        virtual void onMessage( const ConfirmationRequest&, const FIX::SessionID& )
+        { throw FIX::UnsupportedMessageType(); }
+        */
+
+    public:
+        void setOnCreate(const std::function<void(const FIX::SessionID&)> &funcOnCreate) {
+            _funcOnCreate = funcOnCreate;
+        }
+
+        void setOnLogon(const std::function<void(const FIX::SessionID&)> &funcOnLogon) {
+            _funcOnLogon = funcOnLogon;
+        }
+
+    private:
+        std::function<void(const FIX::SessionID&)> _funcOnCreate;
+        std::function<void(const FIX::SessionID&)> _funcOnLogon;
+        std::function<void(const FIX::SessionID&)> _funcOnLogout;
+        std::function<void(const FIX::Message&, const FIX::SessionID&)> _funcToAdmin;
+        std::function<void(const FIX::Message&, const FIX::SessionID&)> _funcToApp;
+        std::function<void(const FIX::Message&, const FIX::SessionID&)> _funcFromAdmin;
+        std::function<void(const FIX::Message&, const FIX::SessionID&)> _funcFromApp;
+
+
+        std::function<void(const FIX44::Heartbeat& msg, const FIX::SessionID& sid)> _funcOnMessageHeartbeat;
+        std::function<void(const FIX44::TestRequest&, const FIX::SessionID&)> _funcOnMessageTestRequest;
+        std::function<void(const FIX44::ResendRequest& msg, const FIX::SessionID& sid)> _funcOnMessageResendRequest;
+
+    };
+}
 
 
 PYBIND11_MODULE(pyfix, m) {
@@ -110,18 +310,11 @@ _message
     .def("toXML", (std::string (FIX::Message::*)() const) &FIX::Message::toXML)
     .def("setField", (void (FIX::Message::*)(int, const std::string&)) &FIX::Message::setField);
 
-
-py::class_<FIX::Application, PyApplication> _application(m, "Application");
+py::class_<quickfix::Application> _application(m, "Application");
 _application
     .def(py::init<>())
-    .def("onCreate", &FIX::Application::onCreate)
-    .def("onLogon", &FIX::Application::onLogon)
-    .def("onLogout", &FIX::Application::onLogout)
-    .def("toAdmin", &FIX::Application::toAdmin)
-    .def("toApp", &FIX::Application::toApp)
-    .def("fromAdmin", &FIX::Application::fromAdmin)
-    .def("fromApp", &FIX::Application::fromApp);
-
+    .def("setOnCreate", &quickfix::Application::setOnCreate)
+    .def("setOnLogon", &quickfix::Application::setOnLogon);
 
 // SessionSettings
 py::class_<FIX::SessionSettings> _session_settings(m, "SessionSettings");

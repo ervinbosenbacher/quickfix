@@ -239,6 +239,9 @@ HAVE_MYSQL:BOOL=OFF
 //Build with PostgreSQL
 HAVE_POSTGRESQL:BOOL=OFF
 
+//Build python extension with pybind11
+HAVE_PYBIND11:BOOL=OFF
+
 //Build with default Python version
 HAVE_PYTHON:BOOL=OFF
 
