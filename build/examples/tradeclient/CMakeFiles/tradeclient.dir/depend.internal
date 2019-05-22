@@ -95,6 +95,12 @@ examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.o
  /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/tradeclient/Application.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o
  ..//config.h
+ ../include/QuickFix/SSLSocketConnection.h
+ ../include/QuickFix/SSLSocketInitiator.h
+ ../include/QuickFix/ThreadedSSLSocketConnection.h
+ ../include/QuickFix/ThreadedSSLSocketInitiator.h
+ ../include/QuickFix/UtilitySSL.h
+ ../include/QuickFix/dirent_windows.h
  ../include/quickfix/./wx/sharedptr.h
  ../include/quickfix/Allocator.h
  ../include/quickfix/Application.h
@@ -125,8 +131,6 @@ examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o
  ../include/quickfix/Mutex.h
  ../include/quickfix/Parser.h
  ../include/quickfix/Responder.h
- ../include/quickfix/SSLSocketConnection.h
- ../include/quickfix/SSLSocketInitiator.h
  ../include/quickfix/Session.h
  ../include/quickfix/SessionID.h
  ../include/quickfix/SessionSettings.h
@@ -136,14 +140,10 @@ examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o
  ../include/quickfix/SocketConnector.h
  ../include/quickfix/SocketInitiator.h
  ../include/quickfix/SocketMonitor.h
- ../include/quickfix/ThreadedSSLSocketConnection.h
- ../include/quickfix/ThreadedSSLSocketInitiator.h
  ../include/quickfix/TimeRange.h
  ../include/quickfix/Utility.h
- ../include/quickfix/UtilitySSL.h
  ../include/quickfix/Values.h
  ../include/quickfix/config-all.h
- ../include/quickfix/dirent_windows.h
  ../include/quickfix/fix40/ExecutionReport.h
  ../include/quickfix/fix40/Message.h
  ../include/quickfix/fix40/MessageCracker.h

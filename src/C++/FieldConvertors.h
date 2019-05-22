@@ -248,7 +248,7 @@ public:
 
   static std::string convert( double value, int padding = 0, int significant_digits = SIGNIFICANT_DIGITS, int buffer_size = BUFFFER_SIZE )
   {
-    char result[buffer_size];
+    char *result = new char[buffer_size];
     char *end = 0;
 
     int size;

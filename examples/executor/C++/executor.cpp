@@ -26,8 +26,8 @@
 #include "quickfix/FileStore.h"
 #include "quickfix/SocketAcceptor.h"
 #ifdef HAVE_SSL
-#include "quickfix/ThreadedSSLSocketAcceptor.h"
-#include "quickfix/SSLSocketAcceptor.h"
+#include "QuickFix/ThreadedSSLSocketAcceptor.h"
+#include "QuickFix/SSLSocketAcceptor.h"
 #endif
 #include "quickfix/Log.h"
 #include "quickfix/SessionSettings.h"

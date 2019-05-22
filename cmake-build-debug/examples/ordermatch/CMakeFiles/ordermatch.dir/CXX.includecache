@@ -718,12 +718,6 @@ string
 sstream
 -
 
-/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch/Market.cpp
-Market.h
-/Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch/Market.h
-iostream
--
-
 /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch/Market.h
 Order.h
 /Users/ervinbosenbacher/workspace/research/quickfix_barclays/examples/ordermatch/Order.h

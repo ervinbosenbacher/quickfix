@@ -37,7 +37,7 @@ int add(int i, int j) {
 //    m.def("add", [](int a, int b) { return a + b; });
 //}
 
-namespace quickfix {
+namespace QuickFix {
 
     class Application
             : public FIX::Application
@@ -298,7 +298,21 @@ namespace quickfix {
         std::function<void(const FIX44::ResendRequest& msg, const FIX::SessionID& sid)> _funcOnMessageResendRequest;
 
     };
-}
+
+    class Initiator {
+    public:
+        Initiator(QuickFix::Application& application, FIX::MessageStoreFactory& messageStoreFactory,
+                const FIX::SessionSettings& sessionSettings, FIX::LogFactory &logFactory)
+                : _initiator(application, messageStoreFactory, sessionSettings, logFactory)
+        {}
+        void start() {
+            _initiator.start();
+        }
+
+    private:
+        FIX::SocketInitiator _initiator;
+    };
+} // quickfix namespace
 
 
 PYBIND11_MODULE(pyfix, m) {
@@ -310,11 +324,17 @@ _message
     .def("toXML", (std::string (FIX::Message::*)() const) &FIX::Message::toXML)
     .def("setField", (void (FIX::Message::*)(int, const std::string&)) &FIX::Message::setField);
 
-py::class_<quickfix::Application> _application(m, "Application");
+py::class_<QuickFix::Application> _application(m, "Application");
 _application
     .def(py::init<>())
-    .def("setOnCreate", &quickfix::Application::setOnCreate)
-    .def("setOnLogon", &quickfix::Application::setOnLogon);
+    .def("setOnCreate", &QuickFix::Application::setOnCreate)
+    .def("setOnLogon", &QuickFix::Application::setOnLogon);
+
+py::class_<QuickFix::Initiator> _initiator(m, "Initiatior");
+_initiator
+    .def(py::init<QuickFix::Application&, FIX::MessageStoreFactory&, const FIX::SessionSettings&, FIX::LogFactory&>())
+    .def("start", &QuickFix::Initiator::start);
+
 
 // SessionSettings
 py::class_<FIX::SessionSettings> _session_settings(m, "SessionSettings");

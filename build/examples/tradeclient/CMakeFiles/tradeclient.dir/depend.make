@@ -94,6 +94,12 @@ examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.o: ../examples/t
 examples/tradeclient/CMakeFiles/tradeclient.dir/Application.cpp.o: ../examples/tradeclient/Application.h
 
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../config.h
+examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/QuickFix/SSLSocketConnection.h
+examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/QuickFix/SSLSocketInitiator.h
+examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/QuickFix/ThreadedSSLSocketConnection.h
+examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/QuickFix/ThreadedSSLSocketInitiator.h
+examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/QuickFix/UtilitySSL.h
+examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/QuickFix/dirent_windows.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/./wx/sharedptr.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/Allocator.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/Application.h
@@ -124,8 +130,6 @@ examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/qu
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/Mutex.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/Parser.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/Responder.h
-examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/SSLSocketConnection.h
-examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/SSLSocketInitiator.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/Session.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/SessionID.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/SessionSettings.h
@@ -135,14 +139,10 @@ examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/qu
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/SocketConnector.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/SocketInitiator.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/SocketMonitor.h
-examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/ThreadedSSLSocketConnection.h
-examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/ThreadedSSLSocketInitiator.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/TimeRange.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/Utility.h
-examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/UtilitySSL.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/Values.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/config-all.h
-examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/dirent_windows.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/fix40/ExecutionReport.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/fix40/Message.h
 examples/tradeclient/CMakeFiles/tradeclient.dir/tradeclient.cpp.o: ../include/quickfix/fix40/MessageCracker.h
