@@ -12,6 +12,7 @@
 #include <quickfix/Message.h>
 #include <quickfix/Initiator.h>
 #include <quickfix/SessionID.h>
+#include <quickfix/Session.h>
 #include <quickfix/SocketInitiator.h>
 #include <quickfix/MessageCracker.h>
 #include <quickfix/SessionSettings.h>
@@ -20,6 +21,9 @@
 #include <quickfix/MessageStore.h>
 #include <quickfix/FileStore.h>
 #include <quickfix/Fields.h>
+#include <quickfix/TimeRange.h>
+#include <quickfix/DataDictionaryProvider.h>
+#include <quickfix/SessionState.h>
 
 #include <quickfix/fix44/Message.h>
 #include <quickfix/fix44/QuoteRequest.h>
@@ -405,83 +409,121 @@ namespace QuickFix {
 
 PYBIND11_MODULE(pyfix, m) {
 
-py::class_<FIX::Message> _message(m, "Message");
-_message
-    .def(py::init<>())
-    .def(py::init<std::vector<int>, std::vector<int>, std::vector<int>>())
-    .def("toXML", (std::string (FIX::Message::*)() const) &FIX::Message::toXML)
-    .def("toString", (std::string (FIX::Message::*)(int, int, int) const) &FIX::Message::toString,
-        py::arg("beginStringField") = FIX::FIELD::BeginString,
-        py::arg("bodyLengthField") = FIX::FIELD::BodyLength,
-        py::arg("checkSumField") = FIX::FIELD::CheckSum)
-    .def("setField", (void (FIX::Message::*)(int, const std::string&)) &FIX::Message::setField);
+    py::class_<FIX::Header> _header(m, "Header");
+    _header
+        .def("getField", (const std::string&(FIX::Header::*)(int) const) &FIX::Header::getField)
+        .def("setField", (void(FIX::Header::*)(int, const std::string&)) &FIX::Header::setField);
 
-py::class_<FIX44::QuoteRequest, FIX::Message> _quote_request(m, "QuoteRequest");
-_quote_request
-    .def(py::init<>())
-    .def("toXML", (std::string (FIX::Message::*)() const) &FIX::Message::toXML)
-    .def("toString", (std::string (FIX::Message::*)(int, int, int) const) &FIX::Message::toString,
-        py::arg("beginStringField") = FIX::FIELD::BeginString,
-        py::arg("bodyLengthField") = FIX::FIELD::BodyLength,
-        py::arg("checkSumField") = FIX::FIELD::CheckSum);
+    py::class_<FIX::Message> _message(m, "Message");
+    _message
+        .def(py::init<>())
+        .def(py::init<std::vector<int>, std::vector<int>, std::vector<int>>())
+        .def("toXML", (std::string (FIX::Message::*)() const) &FIX::Message::toXML)
+        .def("toString", (std::string (FIX::Message::*)(int, int, int) const) &FIX::Message::toString,
+            py::arg("beginStringField") = FIX::FIELD::BeginString,
+            py::arg("bodyLengthField") = FIX::FIELD::BodyLength,
+            py::arg("checkSumField") = FIX::FIELD::CheckSum)
+        .def("setField", (void (FIX::Message::*)(int, const std::string&)) &FIX::Message::setField)
+        .def("getHeader", (FIX::Header& (FIX::Message::*)()) &FIX::Message::getHeader)
+        .def("getTrailer", (FIX::Trailer& (FIX::Message::*)()) &FIX::Message::getTrailer);
 
-py::class_<QuickFix::Application> _application(m, "Application");
-_application
-    .def(py::init<>())
-    .def("funcOnCreate", &QuickFix::Application::set_funcOnCreate)
-    .def("funcOnLogon", &QuickFix::Application::set_funcOnLogon)
-    .def("funcOnLogout", &QuickFix::Application::set_funcOnLogon)
-    .def("funcToApp", &QuickFix::Application::set_funcToApp)
-    .def("funcFromApp", &QuickFix::Application::set_funcFromApp)
-    .def("funcToAdmin", &QuickFix::Application::set_funcToAdmin)
-    .def("funcFromAdmin", &QuickFix::Application::set_funcFromAdmin);
+    py::class_<FIX44::QuoteRequest, FIX::Message> _quote_request(m, "QuoteRequest");
+    _quote_request
+        .def(py::init<>())
+        .def("toXML", (std::string (FIX::Message::*)() const) &FIX::Message::toXML)
+        .def("toString", (std::string (FIX::Message::*)(int, int, int) const) &FIX::Message::toString,
+            py::arg("beginStringField") = FIX::FIELD::BeginString,
+            py::arg("bodyLengthField") = FIX::FIELD::BodyLength,
+            py::arg("checkSumField") = FIX::FIELD::CheckSum);
 
-py::class_<QuickFix::Initiator> _initiator(m, "Initiator");
-_initiator
-    .def(py::init<QuickFix::Application&, FIX::MessageStoreFactory&, const FIX::SessionSettings&, FIX::LogFactory&>())
-    .def("start", &QuickFix::Initiator::start);
+    py::class_<QuickFix::Application> _application(m, "Application");
+    _application
+        .def(py::init<>())
+        .def("funcOnCreate", &QuickFix::Application::set_funcOnCreate)
+        .def("funcOnLogon", &QuickFix::Application::set_funcOnLogon)
+        .def("funcOnLogout", &QuickFix::Application::set_funcOnLogon)
+        .def("funcToApp", &QuickFix::Application::set_funcToApp)
+        .def("funcFromApp", &QuickFix::Application::set_funcFromApp)
+        .def("funcToAdmin", &QuickFix::Application::set_funcToAdmin)
+        .def("funcFromAdmin", &QuickFix::Application::set_funcFromAdmin)
+        .def("funcQuoteRequest", &QuickFix::Application::set_funcQuoteRequest);
+
+    py::class_<QuickFix::Initiator> _initiator(m, "Initiator");
+    _initiator
+        .def(py::init<QuickFix::Application&, FIX::MessageStoreFactory&, const FIX::SessionSettings&, FIX::LogFactory&>())
+        .def("start", &QuickFix::Initiator::start);
 
 
-// SessionSettings
-py::class_<FIX::SessionSettings> _session_settings(m, "SessionSettings");
-_session_settings
-    .def(py::init<const std::string&>());
+    // SessionSettings
+    py::class_<FIX::SessionSettings> _session_settings(m, "SessionSettings");
+    _session_settings
+        .def(py::init<const std::string&>());
 
-//SessionID
-py::class_<FIX::SessionID> _session_id(m, "SessionID");
-_session_id
-    .def(py::init<>())
-    .def("toString", (std::string (FIX::SessionID::*)() const) &FIX::SessionID::toString);
+    //SessionID
+    py::class_<FIX::SessionID> _session_id(m, "SessionID");
+    _session_id
+        .def(py::init<>())
+        .def("toString", (std::string (FIX::SessionID::*)() const) &FIX::SessionID::toString);
+
+
+    /*
+     * static bool sendToTarget( Message& message, const std::string& qualifier = "" );
+  static bool sendToTarget( Message& message, const SessionID& sessionID );
+  static bool sendToTarget( Message&,
+                            const SenderCompID& senderCompID,
+                            const TargetCompID& targetCompID,
+                            const std::string& qualifier = "" );
+  static bool sendToTarget( Message& message,
+                            const std::string& senderCompID,
+                            const std::string& targetCompID,
+                            const std::string& qualifier = "" );
+
+     */
+
+
+    py::class_<FIX::Session> _session(m, "Session");
+    _session
+        .def(py::init<
+                FIX::Application&,
+                FIX::MessageStoreFactory&,
+                const FIX::SessionID&,
+                const FIX::DataDictionaryProvider&,
+                const FIX::TimeRange&,
+                int,
+                FIX::LogFactory*>())
+        .def_static("sendToTarget", (bool (*)(FIX::Message&, const FIX::SessionID&)) &FIX::Session::sendToTarget);
+
+
 
 //MessageStoreFactory
-py::class_<FIX::MessageStoreFactory>(m, "MessageStoreFactory");
+    py::class_<FIX::MessageStoreFactory>(m, "MessageStoreFactory");
 
-// FileStoreFactory
-py::class_<FIX::FileStoreFactory, FIX::MessageStoreFactory> _file_store_factory(m, "FileStoreFactory");
-_file_store_factory
-    .def(py::init<const FIX::SessionSettings&>());
+    // FileStoreFactory
+    py::class_<FIX::FileStoreFactory, FIX::MessageStoreFactory> _file_store_factory(m, "FileStoreFactory");
+    _file_store_factory
+        .def(py::init<const FIX::SessionSettings&>());
 
-// LogFactory
-py::class_<FIX::LogFactory> _log_factory(m, "LogFactory");
+    // LogFactory
+    py::class_<FIX::LogFactory> _log_factory(m, "LogFactory");
 
-// FileLogFactory
-py::class_<FIX::FileLogFactory, FIX::LogFactory> _file_log_factory(m, "FileLogFactory");
-_file_log_factory
-    .def(py::init<const FIX::SessionSettings&>());
-
-
-// ScreenLogFactory
-py::class_<FIX::ScreenLogFactory, FIX::LogFactory> _screen_log_factory(m, "ScreenLogFactory");
-_screen_log_factory
-    .def(py::init<const FIX::SessionSettings&>());
+    // FileLogFactory
+    py::class_<FIX::FileLogFactory, FIX::LogFactory> _file_log_factory(m, "FileLogFactory");
+    _file_log_factory
+        .def(py::init<const FIX::SessionSettings&>());
 
 
-// SocketInitiator
-py::class_<FIX::SocketInitiator> _socket_initiator(m, "SocketInitiator");
-_socket_initiator
-    .def(py::init<FIX::Application&, FIX::MessageStoreFactory&, const FIX::SessionSettings&, FIX::LogFactory&>())
-    .def("start", &FIX::SocketInitiator::start);
+    // ScreenLogFactory
+    py::class_<FIX::ScreenLogFactory, FIX::LogFactory> _screen_log_factory(m, "ScreenLogFactory");
+    _screen_log_factory
+        .def(py::init<const FIX::SessionSettings&>());
 
 
-m.def("add", &add, "A function which adds two numbers");
+    // SocketInitiator
+    py::class_<FIX::SocketInitiator> _socket_initiator(m, "SocketInitiator");
+    _socket_initiator
+        .def(py::init<FIX::Application&, FIX::MessageStoreFactory&, const FIX::SessionSettings&, FIX::LogFactory&>())
+        .def("start", &FIX::SocketInitiator::start);
+
+
+    m.def("add", &add, "A function which adds two numbers");
 }

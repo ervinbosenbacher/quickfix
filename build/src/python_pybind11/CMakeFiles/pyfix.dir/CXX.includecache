@@ -1197,6 +1197,8 @@ quickfix/Initiator.h
 -
 quickfix/SessionID.h
 -
+quickfix/Session.h
+-
 quickfix/SocketInitiator.h
 -
 quickfix/MessageCracker.h
@@ -1212,6 +1214,12 @@ quickfix/MessageStore.h
 quickfix/FileStore.h
 -
 quickfix/Fields.h
+-
+quickfix/TimeRange.h
+-
+quickfix/DataDictionaryProvider.h
+-
+quickfix/SessionState.h
 -
 quickfix/fix44/Message.h
 -
