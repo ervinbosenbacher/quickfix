@@ -596,6 +596,10 @@ string
 ../fix44/Message.h
 ../src/python_pybind11/../../include/quickfix/fix44/Message.h
 
+../src/python_pybind11/../../include/quickfix/fix44/QuoteRequest.h
+Message.h
+../src/python_pybind11/../../include/quickfix/fix44/Message.h
+
 ../src/python_pybind11/../../include/quickfix/fix50/Message.h
 ../Message.h
 ../src/python_pybind11/../../include/quickfix/Message.h
@@ -1207,7 +1211,11 @@ quickfix/MessageStore.h
 -
 quickfix/FileStore.h
 -
+quickfix/Fields.h
+-
 quickfix/fix44/Message.h
+-
+quickfix/fix44/QuoteRequest.h
 -
 memory
 -

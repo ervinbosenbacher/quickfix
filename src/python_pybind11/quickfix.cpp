@@ -19,8 +19,10 @@
 #include <quickfix/FileLog.h>
 #include <quickfix/MessageStore.h>
 #include <quickfix/FileStore.h>
+#include <quickfix/Fields.h>
 
 #include <quickfix/fix44/Message.h>
+#include <quickfix/fix44/QuoteRequest.h>
 
 
 // std stuff
@@ -39,6 +41,24 @@ int add(int i, int j) {
 
 namespace QuickFix {
 
+#define SET_CALLBACK_FUNC_SESSION(FUNC) \
+    public: \
+    void set_func##FUNC(const std::function<void(const FIX::SessionID&)> &func) { \
+        _func##FUNC = func; \
+    } \
+    private: \
+        std::function<void(const FIX::SessionID&)> _func##FUNC;
+
+#define SET_CALLBACK_FUNC_MESSAGE_SESSION(FUNC) \
+    public: \
+    void set_func##FUNC(const std::function<void(const FIX::Message&, const FIX::SessionID&)> &func) { \
+        _func##FUNC = func; \
+    } \
+    private: \
+        std::function<void(const FIX::Message&, const FIX::SessionID&)> _func##FUNC;
+
+
+
     class Application
             : public FIX::Application
             , public FIX::MessageCracker {
@@ -47,50 +67,80 @@ namespace QuickFix {
         Application() {}
 
         /// Notification of a session begin created
-        void onCreate(const FIX::SessionID& sessionID) {
+        void onCreate(const FIX::SessionID& sid) {
             if (_funcOnCreate) {
-                _funcOnCreate(sessionID);
+                _funcOnCreate(sid);
             }
         }
 
         /// Notification of a session successfully logging on
-        void onLogon( const FIX::SessionID& sessionID) {
+        void onLogon( const FIX::SessionID& sid) {
             if (_funcOnLogon) {
-                _funcOnLogon(sessionID);
+                _funcOnLogon(sid);
             }
         }
 
         /// Notification of a session logging off or disconnecting
-        void onLogout( const FIX::SessionID& ) { }
+        void onLogout(const FIX::SessionID& sid) {
+            if (_funcOnLogout) {
+                _funcOnLogout(sid);
+            }
+        }
+
         /// Notification of admin message being sent to target
-        void toAdmin( FIX::Message&, const FIX::SessionID& ) {}
+        void toAdmin( FIX::Message& msg, const FIX::SessionID& sid) {
+            if (_funcToAdmin) {
+                _funcToAdmin(msg, sid);
+            }
+        }
         /// Notification of app message being sent to target
-        void toApp( FIX::Message&, const FIX::SessionID& ) {}
+        void toApp( FIX::Message& msg, const FIX::SessionID& sid) {
+            if (_funcToApp) {
+                _funcToApp(msg, sid);
+            }
+        }
         /// Notification of admin message being received from target
-        void fromAdmin( const FIX::Message&, const FIX::SessionID& ) {}
+        void fromAdmin( const FIX::Message& msg, const FIX::SessionID& sid) {
+            if (_funcFromAdmin) {
+                _funcFromAdmin(msg, sid);
+            }
+        }
+
         /// Notification of app message being received from target
-        void fromApp( const FIX::Message& message, const FIX::SessionID& sessionID) {
-            crack(message, sessionID);
+        void fromApp( const FIX::Message& msg, const FIX::SessionID& sid) {
+            crack(msg, sid);
+            if (_funcFromApp) {
+                _funcFromApp(msg, sid);
+            }
         }
 
         // cracked stuff
+        /*
         void onMessage(const FIX44::Heartbeat& msg, const FIX::SessionID& sid) {
-            if (_funcOnMessageHeartbeat) {
-                _funcOnMessageHeartbeat(msg, sid);
+            if (_funcMessageHeartbeat) {
+                _funcMessageHeartbeat(msg, sid);
             }
         }
 
         void onMessage(const FIX44::TestRequest& msg, const FIX::SessionID& sid) {
-            if (_funcOnMessageTestRequest) {
-                _funcOnMessageTestRequest(msg, sid);
+            if (_funcMessageTestRequest) {
+                _funcMessageTestRequest(msg, sid);
             }
         }
 
-        virtual void onMessage(const FIX44::ResendRequest& msg, const FIX::SessionID& sid) {
-            if (_funcOnMessageResendRequest) {
-                _funcOnMessageResendRequest(msg, sid);
+        void onMessage(const FIX44::ResendRequest& msg, const FIX::SessionID& sid) {
+            if (_funcMessageResendRequest) {
+                _funcMessageResendRequest(msg, sid);
+            }
+        }*/
+
+        void onMessage(const FIX44::QuoteRequest& msg, const FIX::SessionID& sid) {
+            if (_funcQuoteRequest) {
+                _funcQuoteRequest(msg, sid);
             }
         }
+
+
         /*
         virtual void onMessage( const Reject&, const FIX::SessionID& )
         {}
@@ -274,13 +324,51 @@ namespace QuickFix {
         { throw FIX::UnsupportedMessageType(); }
         */
 
+
+
     public:
-        void setOnCreate(const std::function<void(const FIX::SessionID&)> &funcOnCreate) {
-            _funcOnCreate = funcOnCreate;
+        void set_funcOnCreate(const std::function<void(const FIX::SessionID&)> &func) {
+            _funcOnCreate = func;
         }
 
-        void setOnLogon(const std::function<void(const FIX::SessionID&)> &funcOnLogon) {
-            _funcOnLogon = funcOnLogon;
+        void set_funcOnLogon(const std::function<void(const FIX::SessionID&)> &func) {
+            _funcOnLogon = func;
+        }
+
+        void set_funcOnLogout(const std::function<void(const FIX::SessionID&)> &func) {
+            _funcOnLogout = func;
+        }
+
+        void set_funcToAdmin(const std::function<void(const FIX::SessionID&)> &func) {
+            _funcOnLogout = func;
+        }
+
+        void set_funcToApp(const std::function<void(const FIX::Message&, const FIX::SessionID&)> &func) {
+            _funcToApp = func;
+        }
+
+        void set_funcFromAdmin(const std::function<void(const FIX::Message&, const FIX::SessionID&)> &func) {
+            _funcFromAdmin = func;
+        }
+
+        void set_funcFromApp(const std::function<void(const FIX::Message&, const FIX::SessionID&)> &func) {
+            _funcFromApp = func;
+        }
+
+        void set_funcOnMessageHeartbeat(const std::function<void(const FIX44::Heartbeat&, const FIX::SessionID&)> &func) {
+            _funcOnMessageHeartbeat = func;
+        }
+
+        void set_funcOnMessageTestRequest(const std::function<void(const FIX44::TestRequest&, const FIX::SessionID&)> &func) {
+            _funcOnMessageTestRequest = func;
+        }
+
+        void set_funcOnMessageResendRequest(const std::function<void(const FIX44::ResendRequest&, const FIX::SessionID&)> &func) {
+            _funcOnMessageResendRequest = func;
+        }
+
+        void set_funcQuoteRequest(const std::function<void(const FIX44::QuoteRequest& msg, const FIX::SessionID&)> &func) {
+            _funcQuoteRequest = func;
         }
 
     private:
@@ -293,10 +381,10 @@ namespace QuickFix {
         std::function<void(const FIX::Message&, const FIX::SessionID&)> _funcFromApp;
 
 
-        std::function<void(const FIX44::Heartbeat& msg, const FIX::SessionID& sid)> _funcOnMessageHeartbeat;
+        std::function<void(const FIX44::Heartbeat&, const FIX::SessionID&)> _funcOnMessageHeartbeat;
         std::function<void(const FIX44::TestRequest&, const FIX::SessionID&)> _funcOnMessageTestRequest;
-        std::function<void(const FIX44::ResendRequest& msg, const FIX::SessionID& sid)> _funcOnMessageResendRequest;
-
+        std::function<void(const FIX44::ResendRequest&, const FIX::SessionID&)> _funcOnMessageResendRequest;
+        std::function<void(const FIX44::QuoteRequest& msg, const FIX::SessionID&)> _funcQuoteRequest;
     };
 
     class Initiator {
@@ -322,15 +410,33 @@ _message
     .def(py::init<>())
     .def(py::init<std::vector<int>, std::vector<int>, std::vector<int>>())
     .def("toXML", (std::string (FIX::Message::*)() const) &FIX::Message::toXML)
+    .def("toString", (std::string (FIX::Message::*)(int, int, int) const) &FIX::Message::toString,
+        py::arg("beginStringField") = FIX::FIELD::BeginString,
+        py::arg("bodyLengthField") = FIX::FIELD::BodyLength,
+        py::arg("checkSumField") = FIX::FIELD::CheckSum)
     .def("setField", (void (FIX::Message::*)(int, const std::string&)) &FIX::Message::setField);
+
+py::class_<FIX44::QuoteRequest, FIX::Message> _quote_request(m, "QuoteRequest");
+_quote_request
+    .def(py::init<>())
+    .def("toXML", (std::string (FIX::Message::*)() const) &FIX::Message::toXML)
+    .def("toString", (std::string (FIX::Message::*)(int, int, int) const) &FIX::Message::toString,
+        py::arg("beginStringField") = FIX::FIELD::BeginString,
+        py::arg("bodyLengthField") = FIX::FIELD::BodyLength,
+        py::arg("checkSumField") = FIX::FIELD::CheckSum);
 
 py::class_<QuickFix::Application> _application(m, "Application");
 _application
     .def(py::init<>())
-    .def("setOnCreate", &QuickFix::Application::setOnCreate)
-    .def("setOnLogon", &QuickFix::Application::setOnLogon);
+    .def("funcOnCreate", &QuickFix::Application::set_funcOnCreate)
+    .def("funcOnLogon", &QuickFix::Application::set_funcOnLogon)
+    .def("funcOnLogout", &QuickFix::Application::set_funcOnLogon)
+    .def("funcToApp", &QuickFix::Application::set_funcToApp)
+    .def("funcFromApp", &QuickFix::Application::set_funcFromApp)
+    .def("funcToAdmin", &QuickFix::Application::set_funcToAdmin)
+    .def("funcFromAdmin", &QuickFix::Application::set_funcFromAdmin);
 
-py::class_<QuickFix::Initiator> _initiator(m, "Initiatior");
+py::class_<QuickFix::Initiator> _initiator(m, "Initiator");
 _initiator
     .def(py::init<QuickFix::Application&, FIX::MessageStoreFactory&, const FIX::SessionSettings&, FIX::LogFactory&>())
     .def("start", &QuickFix::Initiator::start);

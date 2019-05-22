@@ -55,6 +55,7 @@ src/python_pybind11/CMakeFiles/pyfix.dir/quickfix.cpp.o: ../src/python_pybind11/
 src/python_pybind11/CMakeFiles/pyfix.dir/quickfix.cpp.o: ../src/python_pybind11/../../include/quickfix/fix43/MessageCracker.h
 src/python_pybind11/CMakeFiles/pyfix.dir/quickfix.cpp.o: ../src/python_pybind11/../../include/quickfix/fix44/Message.h
 src/python_pybind11/CMakeFiles/pyfix.dir/quickfix.cpp.o: ../src/python_pybind11/../../include/quickfix/fix44/MessageCracker.h
+src/python_pybind11/CMakeFiles/pyfix.dir/quickfix.cpp.o: ../src/python_pybind11/../../include/quickfix/fix44/QuoteRequest.h
 src/python_pybind11/CMakeFiles/pyfix.dir/quickfix.cpp.o: ../src/python_pybind11/../../include/quickfix/fix50/Message.h
 src/python_pybind11/CMakeFiles/pyfix.dir/quickfix.cpp.o: ../src/python_pybind11/../../include/quickfix/fix50/MessageCracker.h
 src/python_pybind11/CMakeFiles/pyfix.dir/quickfix.cpp.o: ../src/python_pybind11/../../include/quickfix/fix50sp1/Message.h

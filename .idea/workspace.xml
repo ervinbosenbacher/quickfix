@@ -19,20 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c82f3ab-db4f-49b6-bef0-1b91bb3406e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/CMakeFiles/executor.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/executor/C++/executor" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/executor/C++/executor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/ordermatch/ordermatch" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/ordermatch/ordermatch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/CMakeFiles/tradeclient.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/examples/tradeclient/tradeclient" beforeDir="false" afterPath="$PROJECT_DIR$/build/examples/tradeclient/tradeclient" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/C++/CMakeFiles/quickfix.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/executor/C++/executor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/executor/C++/executor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/tradeclient/tradeclient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/tradeclient/tradeclient.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/C++/FieldConvertors.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/C++/FieldConvertors.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/python_pybind11/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/python_pybind11/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/src/python_pybind11/CMakeFiles/pyfix.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/src/python_pybind11/CMakeFiles/pyfix.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/python_pybind11/quickfix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/python_pybind11/quickfix.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -62,7 +49,7 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/include/quickfix/Initiator.h">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="219">
+                  <state relative-caret-position="-624">
                     <caret line="16" selection-start-line="16" selection-end-line="16" />
                   </state>
                 </provider>
@@ -77,18 +64,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/ordermatch/Application.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-              <folding>
-                <element signature="e#858#882#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/C++/fix44/MessageCracker.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
@@ -100,15 +75,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/python_pybind11/quickfix.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="335" column="38" selection-start-line="335" selection-start-column="38" selection-end-line="335" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
               <folding>
-                <element signature="e#173#206#0" expanded="true" />
                 <element signature="e#514#531#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/quickfix/fix44/MessageCracker.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/C++/fix44/QuoteRequest.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/C++/Message.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -140,7 +141,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/python_pybind11/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -154,24 +155,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="355">
               <caret line="103" column="29" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/quickfix/Application.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="46" column="2" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/quickfix/SessionID.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="64" column="2" selection-start-line="64" selection-start-column="2" selection-end-line="64" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -208,6 +191,8 @@
       <find>pyb</find>
       <find>pybi</find>
       <find>[buffer_size]</find>
+      <find>quote</find>
+      <find>toStr</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -265,8 +250,8 @@
         <option value="$PROJECT_DIR$/include/quickfix/Message.h" />
         <option value="$PROJECT_DIR$/include/quickfix/Message.cpp" />
         <option value="$PROJECT_DIR$/src/C++/FieldConvertors.h" />
-        <option value="$PROJECT_DIR$/src/python_pybind11/quickfix.cpp" />
         <option value="$PROJECT_DIR$/src/python_pybind11/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/python_pybind11/quickfix.cpp" />
       </list>
     </option>
   </component>
@@ -293,6 +278,19 @@
               <item name="quickfix" type="b2602c69:ProjectViewProjectNode" />
               <item name="quickfix_barclays" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quickfix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quickfix_barclays" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="C++" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quickfix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quickfix_barclays" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="C++" type="462c0819:PsiDirectoryNode" />
+              <item name="fix44" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="quickfix" type="b2602c69:ProjectViewProjectNode" />
@@ -397,21 +395,21 @@
       <updated>1558187331007</updated>
       <workItem from="1558187332362" duration="15627000" />
       <workItem from="1558207289630" duration="2452000" />
-      <workItem from="1558350565676" duration="21864000" />
+      <workItem from="1558350565676" duration="24502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39943000" />
+    <option name="totallyTimeSpent" value="42581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14520743" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2160229" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.46024096" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.27710843" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -434,20 +432,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/C++/SocketAcceptor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/HttpServer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/C++/DataDictionaryProvider.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -601,16 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/C++/Message.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="126" column="107" selection-start-line="126" selection-start-column="2" selection-end-line="126" selection-end-column="107" />
-          <folding>
-            <element signature="e#881#902#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/python_pybind11/quickfix.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -759,28 +733,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/python_pybind11/quickfix.cpp">
+    <entry file="file://$PROJECT_DIR$/src/python_pybind11/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="335" column="38" selection-start-line="335" selection-start-column="38" selection-end-line="335" selection-end-column="38" />
-          <folding>
-            <element signature="e#173#206#0" expanded="true" />
-            <element signature="e#514#531#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/C++/Message.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/C++/fix44/QuoteRequest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/quickfix/fix44/MessageCracker.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/quickfix/Initiator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="-624">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/python_pybind11/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/src/python_pybind11/quickfix.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="360">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="e#514#531#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
